@@ -18,7 +18,7 @@ defineProps<{
     <div class="max-w-[1120px] mx-auto">
       <div class="mb-12">
         <p class="bp-label mb-3">{{ data.tag }}</p>
-        <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-[family-name:var(--font-sans)] mb-3.5">
+        <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] mb-3.5">
           {{ data.title }}
         </h2>
         <p class="text-[17px] leading-relaxed text-[var(--bp-text-secondary)] max-w-[580px]">
@@ -33,10 +33,10 @@ defineProps<{
           class="bp-card p-7"
         >
           <CornerMarks />
-          <div class="w-9 h-9 rounded-xs bg-[var(--bp-accent-light)] flex items-center justify-center mb-4 text-[15px] font-bold text-[var(--bp-accent)] font-[family-name:var(--font-sans)]">
+          <div class="w-9 h-9 rounded-xs bg-[var(--bp-accent-light)] flex items-center justify-center mb-4 text-[15px] font-bold text-[var(--bp-accent)] font-heading">
             {{ i + 1 }}
           </div>
-          <h3 class="font-bold text-lg font-[family-name:var(--font-sans)] mb-2">
+          <h3 class="font-bold text-lg mb-2">
             {{ pillar.title }}
           </h3>
           <p class="text-[15px] leading-relaxed text-[var(--bp-text-secondary)]">
@@ -47,7 +47,7 @@ defineProps<{
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
-          <h3 class="font-bold text-[clamp(24px,2.5vw,32px)] leading-[1.2] font-[family-name:var(--font-sans)] mb-4">
+          <h3 class="font-bold text-[clamp(24px,2.5vw,32px)] leading-[1.2] mb-4">
             {{ data.challenge.title }}
           </h3>
           <p
@@ -59,7 +59,7 @@ defineProps<{
           </p>
         </div>
         <div class="bp-card aspect-[4/3] flex items-center justify-center p-6">
-          <span class="font-mono text-[13px] text-[var(--bp-text-secondary)] opacity-50 text-center">
+          <span class="font-heading text-[13px] text-[var(--bp-text-secondary)] opacity-50 text-center">
             [ illustration placeholder ]
           </span>
         </div>

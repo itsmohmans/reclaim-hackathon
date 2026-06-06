@@ -15,7 +15,7 @@ defineProps<{
     <div class="max-w-[1120px] mx-auto px-6 sm:px-10 py-12">
       <div class="flex flex-col sm:flex-row justify-between items-start gap-8">
         <div>
-          <p class="font-bold text-base font-[family-name:var(--font-sans)] mb-2">
+          <p class="font-bold text-base font-heading mb-2">
             {{ data.brand }}
           </p>
           <p class="text-sm opacity-45">{{ data.tagline }}</p>

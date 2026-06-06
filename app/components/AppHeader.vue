@@ -13,7 +13,7 @@ const { locale, toggleLocale } = useLocale()
 <template>
   <UHeader>
     <template #left>
-      <NuxtLink to="/" class="font-bold text-[17px] font-[family-name:var(--font-sans)]">
+      <NuxtLink to="/" class="font-bold text-[17px] font-heading">
         {{ data.brand }}
       </NuxtLink>
     </template>

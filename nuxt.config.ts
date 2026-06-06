@@ -17,6 +17,10 @@ export default defineNuxtConfig({
     }
   },
 
+  fonts: {
+    provider: 'local'
+  },
+
   compatibilityDate: '2025-01-15',
 
   nitro: {

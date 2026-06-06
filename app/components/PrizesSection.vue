@@ -14,7 +14,7 @@ defineProps<{
     <div class="max-w-[1120px] mx-auto">
       <div class="mb-12">
         <p class="bp-label mb-3">{{ data.tag }}</p>
-        <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-[family-name:var(--font-sans)] mb-3.5">
+        <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-heading mb-3.5">
           {{ data.title }}
         </h2>
         <p class="text-[17px] leading-relaxed text-[var(--bp-text-secondary)] max-w-[580px]">
@@ -34,11 +34,11 @@ defineProps<{
           ]"
         >
           <CornerMarks />
-          <span class="font-mono text-sm font-semibold text-[var(--bp-accent)]">
+          <span class="font-heading text-sm font-semibold text-[var(--bp-accent)]">
             {{ prize.place }}
           </span>
           <div
-            class="font-bold font-[family-name:var(--font-sans)] my-2"
+            class="font-bold font-heading my-2"
             :class="prize.featured ? 'text-[32px]' : 'text-2xl'"
           >
             {{ prize.amount }}

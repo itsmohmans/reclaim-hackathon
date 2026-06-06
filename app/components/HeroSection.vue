@@ -18,7 +18,7 @@ const props = defineProps<{
     <div class="relative z-10 max-w-[760px]">
       <p class="bp-label mb-4">{{ data.tag }}</p>
 
-      <h1 class="font-bold text-[clamp(42px,6vw,80px)] leading-[1.04] font-[family-name:var(--font-sans)] mb-6 whitespace-pre-line">
+      <h1 class="font-bold text-[clamp(42px,6vw,80px)] leading-[1.04] rtl:leading-normal font-heading mb-6 whitespace-pre-line">
         {{ data.title }}
       </h1>
 
@@ -41,7 +41,7 @@ const props = defineProps<{
         </a>
       </div>
 
-      <p class="text-sm text-[var(--bp-text-secondary)]">{{ data.date }}</p>
+      <p class="text-lg font-bold text-[var(--bp-text-secondary)]">{{ data.date }}</p>
 
       <BlueprintDiagram />
     </div>

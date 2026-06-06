@@ -13,7 +13,7 @@ defineProps<{
     <div class="max-w-[1120px] mx-auto">
       <div class="max-w-[680px] mx-auto text-center">
         <p class="bp-label mb-3">{{ data.tag }}</p>
-        <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-[family-name:var(--font-sans)] mb-6">
+        <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-heading mb-6">
           {{ data.title }}
         </h2>
         <p

@@ -12,7 +12,7 @@ defineProps<{
 <template>
   <section id="register" class="bp-section-dark py-16 sm:py-24 px-6 sm:px-10 text-center">
     <div class="max-w-[600px] mx-auto">
-      <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-[family-name:var(--font-sans)] text-[var(--bp-text-on-dark)] mb-4 whitespace-pre-line">
+      <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-heading text-[var(--bp-text-on-dark)] mb-4 whitespace-pre-line">
         {{ data.title }}
       </h2>
       <p class="text-[17px] leading-relaxed text-[var(--bp-text-on-dark)]/60 mb-9">

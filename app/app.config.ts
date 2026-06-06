@@ -37,7 +37,7 @@ export default defineAppConfig({
       slots: {
         root: 'max-w-[720px]',
         trigger: 'py-5 cursor-pointer',
-        label: 'font-semibold text-base font-[var(--font-sans)]',
+        label: 'font-semibold text-base font-heading',
         content: 'text-[15px] leading-relaxed text-[var(--bp-text-secondary)] pb-5'
       }
     },
@@ -48,7 +48,7 @@ export default defineAppConfig({
         root: 'py-16 sm:py-24',
         container: 'max-w-[1120px]',
         headline: 'bp-label mb-3',
-        title: 'font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-[family-name:var(--font-sans)]',
+        title: 'font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-heading',
         description: 'text-[17px] leading-relaxed text-[var(--bp-text-secondary)] max-w-[580px]'
       }
     },
@@ -56,7 +56,7 @@ export default defineAppConfig({
       slots: {
         root: 'min-h-[calc(100vh-64px)] flex flex-col justify-center items-center text-center py-10',
         container: 'max-w-[760px] relative z-10',
-        title: 'font-bold text-[clamp(42px,6vw,80px)] leading-[1.04] font-[family-name:var(--font-sans)]',
+        title: 'font-bold text-[clamp(42px,6vw,80px)] leading-[1.04] font-heading',
         description: 'text-[17px] leading-relaxed text-[var(--bp-text-secondary)] max-w-[540px] mx-auto',
         links: 'gap-4 justify-center'
       }
@@ -65,7 +65,7 @@ export default defineAppConfig({
       slots: {
         root: 'py-16 sm:py-24 bg-[var(--bp-bg-dark)] text-[var(--bp-text-on-dark)]',
         container: 'max-w-[600px] text-center',
-        title: 'font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-[family-name:var(--font-sans)] text-[var(--bp-text-on-dark)]',
+        title: 'font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-heading text-[var(--bp-text-on-dark)]',
         description: 'text-[17px] leading-relaxed text-[var(--bp-text-on-dark)]/60',
         links: 'gap-4 justify-center'
       }

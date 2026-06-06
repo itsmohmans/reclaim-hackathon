@@ -1,12 +1,15 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+@import "../fonts/ibm-plex-sans-arabic.css";
+@import "../fonts/space-grotesk.css";
+@import "../fonts/alexandria.css";
 
 @source "../../../content/**/*";
 
 @theme static {
-  --font-sans: 'DM Sans', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Space Grotesk', sans-serif;
+  --font-body: 'IBM Plex Sans Arabic', sans-serif;
+  --font-heading: 'Space Grotesk', monospace, sans-serif;
 
   --color-copper-50: #FFF3E8;
   --color-copper-100: #FFE4CC;
@@ -34,6 +37,11 @@
   --bp-dot: #D8D3CA;
 }
 
+[dir="rtl"] {
+  --font-heading: 'Alexandria', sans-serif;
+  text-align: right;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -48,11 +56,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-sans);
-}
-
-[dir="rtl"] {
-  text-align: right;
+  font-family: var(--font-heading);
 }
 
 .bp-dot-grid {
@@ -78,10 +82,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bp-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-heading);
   font-size: 12px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--bp-accent);
   font-weight: 600;
+}
+
+[dir="rtl"] .bp-label {
+  letter-spacing: 0.04em;
 }
