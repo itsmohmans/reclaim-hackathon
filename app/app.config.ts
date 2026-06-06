@@ -18,12 +18,17 @@ export default defineAppConfig({
     },
     button: {
       slots: {
-        base: 'font-medium transition-all duration-150'
+        base: 'font-medium transition-all duration-150 !rounded-none'
       },
       variants: {
         size: {
           md: { base: 'px-5 py-2.5' },
           lg: { base: 'px-7 py-3.5' }
+        },
+        variant: {
+          ghost: {
+            base: 'hover:bg-[var(--bp-bg-hover)] text-[var(--bp-text)] hover:text-[var(--bp-text-primary)] focus-visible:outline focus-visible:outline-[var(--bp-accent)] focus-visible:outline-offset-2'
+          },
         }
       }
     },

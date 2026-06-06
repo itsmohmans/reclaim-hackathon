@@ -30,7 +30,7 @@ const { locale, toggleLocale } = useLocale()
         color="neutral"
         variant="ghost"
         size="sm"
-        class="font-medium"
+        class="font-medium max-lg:hidden transition-none hover:outline hover:outline-dashed hover:outline-[var(--bp-text-secondary)] rounded-sm cursor-pointer"
         @click="toggleLocale"
       />
       <UButton
@@ -46,6 +46,9 @@ const { locale, toggleLocale } = useLocale()
       <UNavigationMenu
         :items="data.links.map(l => ({ label: l.label, to: l.to }))"
         orientation="vertical"
+        :ui="{
+          linkLabel: 'w-full rtl:text-right'
+        }"
       />
       <div class="mt-4 flex flex-col gap-2">
         <UButton
