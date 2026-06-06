@@ -3,7 +3,7 @@ const { locale } = useLocale()
 
 const { data: page } = await useAsyncData(
   () => `homepage-${locale.value}`,
-  () => queryCollection('homepage').path(`/${locale.value}`).first(),
+  () => queryCollection('homepage').where('locale', '=', locale.value).first(),
   { watch: [locale] }
 )
 
