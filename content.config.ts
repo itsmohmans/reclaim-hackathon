@@ -142,9 +142,14 @@ const homepageSchema = z.object({
 
 export default defineContentConfig({
   collections: {
-    homepage: defineCollection({
-      source: '{en,ar}/index.yml',
-      type: 'data',
+    homepage_en: defineCollection({
+      type: 'page',
+      source: { include: 'en/**', prefix: '' },
+      schema: homepageSchema
+    }),
+    homepage_ar: defineCollection({
+      type: 'page',
+      source: { include: 'ar/**', prefix: '' },
       schema: homepageSchema
     })
   }

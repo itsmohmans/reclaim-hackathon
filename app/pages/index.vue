@@ -1,9 +1,14 @@
 <script setup lang="ts">
-const { locale } = useLocale()
+import type { Collections } from '@nuxt/content'
+
+const { locale } = useI18n()
 
 const { data: page } = await useAsyncData(
   () => `homepage-${locale.value}`,
-  () => queryCollection('homepage').where('locale', '=', locale.value).first(),
+  () => {
+    const collection = (`homepage_${locale.value}`) as keyof Collections
+    return queryCollection(collection).path('/').first()
+  },
   { watch: [locale] }
 )
 

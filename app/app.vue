@@ -1,7 +1,10 @@
 <script setup lang="ts">
-const { locale, dir } = useLocale()
+const { locale, locales } = useI18n()
 
-const lang = computed(() => locale.value)
+const dir = computed(() => {
+  const current = locales.value.find(l => typeof l === 'object' && l.code === locale.value)
+  return (current && typeof current === 'object' && 'dir' in current ? current.dir : 'ltr') as "ltr" | "rtl"
+})
 
 useHead({
   meta: [
@@ -11,8 +14,8 @@ useHead({
     { rel: 'icon', href: '/favicon.ico' }
   ],
   htmlAttrs: {
-    lang,
-    dir
+    lang: locale,
+    dir: dir.value
   }
 })
 </script>

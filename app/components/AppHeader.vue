@@ -7,7 +7,9 @@ defineProps<{
   }
 }>()
 
-const { locale, toggleLocale } = useLocale()
+const { locale } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
+const otherLocale = computed(() => locale.value === 'en' ? 'ar' : 'en')
 </script>
 
 <template>
@@ -27,11 +29,11 @@ const { locale, toggleLocale } = useLocale()
     <template #right>
       <UButton
         :label="locale === 'en' ? 'عربي' : 'EN'"
+        :to="switchLocalePath(otherLocale)"
         color="neutral"
         variant="ghost"
         size="sm"
         class="font-medium max-lg:hidden transition-none hover:outline hover:outline-dashed hover:outline-[var(--bp-text-secondary)] rounded-sm cursor-pointer"
-        @click="toggleLocale"
       />
       <UButton
         :label="data.cta.label"
@@ -53,10 +55,10 @@ const { locale, toggleLocale } = useLocale()
       <div class="mt-4 flex flex-col gap-2">
         <UButton
           :label="locale === 'en' ? 'عربي' : 'English'"
+          :to="switchLocalePath(otherLocale)"
           color="neutral"
           variant="soft"
           block
-          @click="toggleLocale"
         />
         <UButton
           :label="data.cta.label"

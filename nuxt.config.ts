@@ -3,6 +3,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/content',
     '@nuxt/ui',
+    '@nuxtjs/i18n',
     '@vueuse/nuxt',
     'motion-v/nuxt'
   ],
@@ -17,6 +18,15 @@ export default defineNuxtConfig({
     }
   },
 
+  i18n: {
+    locales: [
+      { code: 'en', name: 'English', language: 'en-US', dir: 'ltr' },
+      { code: 'ar', name: 'العربية', language: 'ar', dir: 'rtl' }
+    ],
+    defaultLocale: 'en',
+    strategy: 'prefix_except_default'
+  },
+
   fonts: {
     provider: 'local'
   },
@@ -25,7 +35,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/']
+      routes: ['/', '/ar']
     }
   }
 })
