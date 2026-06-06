@@ -1,0 +1,215 @@
+---
+locale: en
+dir: ltr
+
+seo:
+  title: "Delete Big Tech — Open Source Hackathon by JOSA"
+  description: "A university-led open source hackathon focused on digital ownership, interoperability, and building practical tools for a healthier open web."
+
+nav:
+  brand: "Delete Big Tech"
+  links:
+    - label: Tracks
+      to: "#tracks"
+    - label: Timeline
+      to: "#timeline"
+    - label: FAQ
+      to: "#faq"
+  cta:
+    label: "Register →"
+    to: "#register"
+
+hero:
+  tag: "JOSA — Open Source Hackathon"
+  title: "Infrastructure\nFor a Free Web"
+  description: "Build practical tools that make it easier for people to own their data, migrate away from platform lock-in, and participate in a healthier open web."
+  date: "June 9 – July 18, 2026"
+  primaryCta:
+    label: "Register Now →"
+    to: "#register"
+    color: primary
+    size: lg
+  secondaryCta:
+    label: "Learn More ↓"
+    to: "#about"
+    color: neutral
+    variant: ghost
+    size: lg
+
+about:
+  tag: "What is this about?"
+  title: "A Hackathon for the Open Web"
+  description: "The web is increasingly controlled by a handful of corporations. We're building the alternative."
+  pillars:
+    - title: "Own Your Data"
+      description: "Build tools that let people export, control, and truly own their personal data. No more platform lock-in."
+    - title: "Connect Everything"
+      description: "Create bridges between services and protocols so the open web can actually work together."
+    - title: "Build for Everyone"
+      description: "Make open-source alternatives that real people — not just developers — can actually use."
+  challenge:
+    title: "The Challenge"
+    paragraphs:
+      - "Your data, your social connections, your creative work — all locked inside platforms that can change the rules whenever they want. We believe it doesn't have to be this way."
+      - "Build tools that give people real choices: to migrate, to self-host, to own what's theirs."
+
+tracks:
+  tag: "Challenge Tracks"
+  title: "Choose Your Track"
+  description: "Pick a track that matches your interests. Each one addresses a different facet of the open web."
+  items:
+    - num: "01"
+      title: "Grandma-friendly Replacement"
+      description: "Open-source alternatives to everyday tools, designed for real people. Email, messaging, photo sharing — usable without a CS degree."
+    - num: "02"
+      title: "Open Infrastructure Tooling"
+      description: "Self-hosting, deployment, server management. Make running your own infrastructure as easy as clicking \"sign up.\""
+    - num: "03"
+      title: "CLI Tools"
+      description: "Command-line utilities for the open-source ecosystem. Migration scripts, protocol tools, developer workflows."
+    - num: "04"
+      title: "Data Ownership"
+      description: "Tools that help people export and migrate their data from centralized platforms. Make switching services painless."
+
+howItWorks:
+  tag: "How It Works"
+  title: "Three Steps to Shipping"
+  steps:
+    - num: "1"
+      title: "Register"
+      description: "Sign up solo or with a team of up to 4. All skill levels welcome."
+    - num: "2"
+      title: "Build"
+      description: "Choose a track, pick a problem, and start hacking. Mentors and resources available throughout."
+    - num: "3"
+      title: "Submit"
+      description: "Present your project to judges and the community. Ship something real."
+
+resources:
+  tag: "Ecosystem"
+  title: "Technologies to Explore"
+  description: "Get inspired by these open protocols and tools. Use them as building blocks for your project."
+  items:
+    - name: "Matrix"
+      description: "Decentralized, end-to-end encrypted communication protocol."
+    - name: "ActivityPub"
+      description: "The protocol powering Mastodon and the fediverse."
+    - name: "ATProto"
+      description: "Bluesky's open protocol for social networking."
+    - name: "OpenStreetMap"
+      description: "The Wikipedia of maps. Community-built, open data."
+    - name: "PeerTube"
+      description: "Federated video hosting. YouTube without the platform."
+    - name: "Nextcloud"
+      description: "Self-hosted productivity. Files, calendar, contacts — yours."
+
+timeline:
+  tag: "Timeline"
+  title: "Key Dates"
+  events:
+    - date: "Jun 9"
+      title: "Registration Opens"
+      description: "Sign up individually or as a team."
+    - date: "Jun 16"
+      title: "Opening Ceremony"
+      description: "Kickoff event with track introductions and team forming."
+    - date: "Jun 16 – Jul 10"
+      title: "Hacking Period"
+      description: "Build your project with mentor support and workshops."
+    - date: "Jul 10"
+      title: "Submissions Due"
+      description: "Submit your project, documentation, and demo."
+    - date: "Jul 14–16"
+      title: "Judging"
+      description: "Projects reviewed by open source maintainers and community leaders."
+    - date: "Jul 18"
+      title: "Closing Ceremony"
+      description: "Winners announced and community showcase."
+
+criteria:
+  tag: "Judging"
+  title: "How Projects Are Evaluated"
+  items:
+    - title: "Impact & Usefulness"
+      description: "Does it solve a real problem for real people?"
+    - title: "Technical Quality"
+      description: "Is the code clean, functional, and well-documented?"
+    - title: "Openness"
+      description: "Can others contribute, fork, and build on this project?"
+    - title: "Creativity"
+      description: "Does it approach the problem in a fresh, interesting way?"
+
+community:
+  tag: "Why This Matters"
+  title: "More Than a Competition"
+  paragraphs:
+    - "This hackathon isn't about building the next startup. It's about building the tools and infrastructure that make the internet work better for everyone."
+    - "Join a community of builders who believe the web should be open, interoperable, and owned by its users — not controlled by a handful of corporations."
+
+prizes:
+  tag: "Prizes"
+  title: "Recognition, Not the Point"
+  description: "Prizes are nice, but the real reward is shipping something useful."
+  items:
+    - place: "2nd"
+      label: "Runner Up"
+      amount: "$300"
+    - place: "1st"
+      label: "Grand Prize"
+      amount: "$500"
+      featured: true
+    - place: "3rd"
+      label: "Third Place"
+      amount: "$150"
+
+faq:
+  tag: "FAQ"
+  title: "Frequently Asked Questions"
+  items:
+    - question: "Who can participate?"
+      answer: "University students, open source contributors, and developers of all skill levels are welcome. You don't need to be a CS student."
+    - question: "Do I need a team?"
+      answer: "You can participate solo or in teams of up to 4. We'll also have a team-forming session at kickoff."
+    - question: "Is this a crypto/Web3 event?"
+      answer: "No. This is about open protocols, data ownership, and practical tools. Not cryptocurrency, NFTs, or blockchain."
+    - question: "What should I build?"
+      answer: "Anything that helps people own their data, use open protocols, or move away from centralized platforms. Check the tracks for inspiration."
+    - question: "How will projects be judged?"
+      answer: "By a panel of open source maintainers and community leaders based on impact, technical quality, openness, and creativity."
+
+cta:
+  title: "Ready to Build\na Better Web?"
+  description: "Join builders working on practical tools for digital ownership and the open web."
+  primaryCta:
+    label: "Register Now →"
+    to: "#register"
+    color: primary
+    size: lg
+  secondaryCta:
+    label: "Join Community →"
+    to: "#"
+    color: neutral
+    variant: outline
+    size: lg
+
+footer:
+  brand: "Delete Big Tech"
+  tagline: "An open source hackathon by JOSA"
+  eventLinks:
+    - label: Tracks
+      to: "#tracks"
+    - label: Timeline
+      to: "#timeline"
+    - label: Criteria
+      to: "#criteria"
+    - label: FAQ
+      to: "#faq"
+  connectLinks:
+    - label: GitHub
+      to: "#"
+    - label: Instagram
+      to: "#"
+    - label: Email
+      to: "#"
+  copyright: "© 2026 JOSA. Open source, always."
+---
