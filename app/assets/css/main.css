@@ -19,6 +19,19 @@
   --bp-dot: #D8D3CA;
 }
 
+.dark {
+  --bp-bg: #191613;
+  --bp-bg-alt: #211D19;
+  --bp-bg-dark: #100E0B;
+  --bp-text: #E8E4DC;
+  --bp-text-secondary: #9A9088;
+  --bp-text-on-dark: #E8E4DC;
+  --bp-accent: #D4823E;
+  --bp-accent-light: #2E2218;
+  --bp-border: #3A342C;
+  --bp-dot: #2E2820;
+}
+
 @theme static {
   --font-sans: 'Space Grotesk', sans-serif;
   --font-body: 'IBM Plex Sans Arabic', sans-serif;

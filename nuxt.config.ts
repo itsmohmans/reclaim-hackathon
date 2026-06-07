@@ -31,6 +31,10 @@ export default defineNuxtConfig({
     provider: 'local'
   },
 
+  colorMode: {
+    preference: 'dark'
+  },
+
   compatibilityDate: '2025-01-15',
 
   nitro: {

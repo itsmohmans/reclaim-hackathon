@@ -10,6 +10,10 @@ defineProps<{
 const { locale } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 const otherLocale = computed(() => locale.value === 'en' ? 'ar' : 'en')
+const colorMode = useColorMode()
+const toggleColorMode = () => {
+  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+}
 </script>
 
 <template>
@@ -30,6 +34,14 @@ const otherLocale = computed(() => locale.value === 'en' ? 'ar' : 'en')
     />
 
     <template #right>
+      <UButton
+        :icon="colorMode.value === 'dark' ? 'i-lucide-sun' : 'i-lucide-moon'"
+        color="neutral"
+        variant="ghost"
+        size="sm"
+        class="max-lg:hidden text-[var(--bp-text-secondary)] cursor-pointer"
+        @click="toggleColorMode"
+      />
       <UButton
         :label="locale === 'en' ? 'عربي' : 'EN'"
         :to="switchLocalePath(otherLocale)"
@@ -56,6 +68,14 @@ const otherLocale = computed(() => locale.value === 'en' ? 'ar' : 'en')
         }"
       />
       <div class="mt-4 flex flex-col gap-2">
+        <UButton
+          :icon="colorMode.value === 'dark' ? 'i-lucide-sun' : 'i-lucide-moon'"
+          :label="colorMode.value === 'dark' ? (locale === 'en' ? 'Light Mode' : 'الوضع الفاتح') : (locale === 'en' ? 'Dark Mode' : 'الوضع الداكن')"
+          color="neutral"
+          variant="soft"
+          block
+          @click="toggleColorMode"
+        />
         <UButton
           :label="locale === 'en' ? 'عربي' : 'English'"
           :to="switchLocalePath(otherLocale)"
