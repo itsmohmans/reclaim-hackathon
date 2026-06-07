@@ -27,8 +27,8 @@ export default defineAppConfig({
         },
         variant: {
           ghost: {
-            base: 'hover:bg-[var(--bp-bg-hover)] text-[var(--bp-text)] hover:text-[var(--bp-text-primary)] focus-visible:outline focus-visible:outline-[var(--bp-accent)] focus-visible:outline-offset-2'
-          },
+            base: '!bg-transparent text-[var(--bp-text-secondary)] hover:text-[var(--bp-text)] focus-visible:outline focus-visible:outline-[var(--bp-accent)] focus-visible:outline-offset-2',
+          }
         }
       }
     },

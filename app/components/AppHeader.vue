@@ -23,6 +23,9 @@ const otherLocale = computed(() => locale.value === 'en' ? 'ar' : 'en')
     <UNavigationMenu
       :items="data.links.map(l => ({ label: l.label, to: l.to }))"
       variant="link"
+      :ui="{
+        link: 'transition-colors hover:rounded-none hover:bg-transparent hover:outline hover:outline-dashed hover:text-[var(--bp-text-secondary)]',
+      }"
       class="hidden lg:flex"
     />
 
@@ -30,10 +33,10 @@ const otherLocale = computed(() => locale.value === 'en' ? 'ar' : 'en')
       <UButton
         :label="locale === 'en' ? 'عربي' : 'EN'"
         :to="switchLocalePath(otherLocale)"
-        color="neutral"
+        color="primary"
         variant="ghost"
         size="sm"
-        class="font-medium max-lg:hidden transition-none hover:outline hover:outline-dashed hover:outline-[var(--bp-text-secondary)] rounded-sm cursor-pointer"
+        class="text-[var(--bp-text-secondary)] font-medium max-lg:hidden transition-none focus-visible:outline focus-visible:outline-[var(--bp-accent)] focus-visible:outline-offset-2 rounded-sm cursor-pointer"
       />
       <UButton
         :label="data.cta.label"

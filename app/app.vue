@@ -15,7 +15,7 @@ useHead({
   ],
   htmlAttrs: {
     lang: locale,
-    dir: dir.value
+    dir
   }
 })
 </script>

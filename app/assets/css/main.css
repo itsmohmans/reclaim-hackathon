@@ -6,6 +6,19 @@
 
 @source "../../../content/**/*";
 
+:root {
+  --bp-bg: #F8F6F2;
+  --bp-bg-alt: #EDEAE4;
+  --bp-bg-dark: #2A2520;
+  --bp-text: #1E1B18;
+  --bp-text-secondary: #7A7168;
+  --bp-text-on-dark: #F8F6F2;
+  --bp-accent: #C4722E;
+  --bp-accent-light: #FFF3E8;
+  --bp-border: #D8D3CA;
+  --bp-dot: #D8D3CA;
+}
+
 @theme static {
   --font-sans: 'Space Grotesk', sans-serif;
   --font-body: 'IBM Plex Sans Arabic', sans-serif;
@@ -22,19 +35,18 @@
   --color-copper-800: #6B3D13;
   --color-copper-900: #4A2A0D;
   --color-copper-950: #2D1908;
-}
-
-:root {
-  --bp-bg: #F8F6F2;
-  --bp-bg-alt: #EDEAE4;
-  --bp-bg-dark: #2A2520;
-  --bp-text: #1E1B18;
-  --bp-text-secondary: #7A7168;
-  --bp-text-on-dark: #F8F6F2;
-  --bp-accent: #C4722E;
-  --bp-accent-light: #FFF3E8;
-  --bp-border: #D8D3CA;
-  --bp-dot: #D8D3CA;
+  
+  --color-stone-50: #F8F6F2;
+  --color-stone-100: #EDEAE4;
+  --color-stone-200: #D8D3CA;
+  --color-stone-300: #B9AFA3;
+  --color-stone-400: #9B8B7C;
+  --color-stone-500: #7A7168;
+  --color-stone-600: #5E564D;
+  --color-stone-700: #423B32;
+  --color-stone-800: #261F1A;
+  --color-stone-900: #0D0A05;
+  --color-stone-950: #050301;
 }
 
 [dir="rtl"] {
