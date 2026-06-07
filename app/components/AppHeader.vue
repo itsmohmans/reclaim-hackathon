@@ -21,7 +21,7 @@ const otherLocale = computed(() => locale.value === 'en' ? 'ar' : 'en')
     </template>
 
     <UNavigationMenu
-      :items="data.links.map(l => ({ label: l.label, to: l.to }))"
+      :items="data.links"
       variant="link"
       :ui="{
         link: 'transition-colors hover:rounded-none hover:bg-transparent hover:outline hover:outline-dashed hover:text-[var(--bp-text-secondary)]',

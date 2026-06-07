@@ -9,14 +9,14 @@ nav:
   brand: "Delete Big Tech"
   links:
     - label: Tracks
-      to: "#tracks"
+      to: "/#tracks"
     - label: Timeline
-      to: "#timeline"
+      to: "/#timeline"
     - label: FAQ
-      to: "#faq"
+      to: "/#faq"
   cta:
     label: "Register →"
-    to: "#register"
+    to: "/#register"
 
 hero:
   tag: "JOSA — Open Source Hackathon"
@@ -25,12 +25,12 @@ hero:
   date: "June 9 – July 18, 2026"
   primaryCta:
     label: "Register Now →"
-    to: "#register"
+    to: "/#register"
     color: primary
     size: lg
   secondaryCta:
     label: "Learn More ↓"
-    to: "#about"
+    to: "/#about"
     color: neutral
     variant: ghost
     size: lg
@@ -181,12 +181,12 @@ cta:
   description: "Join builders working on practical tools for digital ownership and the open web."
   primaryCta:
     label: "Register Now →"
-    to: "#register"
+    to: "/#register"
     color: primary
     size: lg
   secondaryCta:
     label: "Join Community →"
-    to: "#"
+    to: "/#"
     color: neutral
     variant: outline
     size: lg
@@ -196,18 +196,18 @@ footer:
   tagline: "An open source hackathon by JOSA"
   eventLinks:
     - label: Tracks
-      to: "#tracks"
+      to: "/#tracks"
     - label: Timeline
-      to: "#timeline"
+      to: "/#timeline"
     - label: Criteria
-      to: "#criteria"
+      to: "/#criteria"
     - label: FAQ
-      to: "#faq"
+      to: "/#faq"
   connectLinks:
     - label: GitHub
-      to: "#"
+      to: "/#"
     - label: Instagram
-      to: "#"
+      to: "/#"
     - label: Email
-      to: "#"
+      to: "/#"
   copyright: "© 2026 JOSA. Open source, always."

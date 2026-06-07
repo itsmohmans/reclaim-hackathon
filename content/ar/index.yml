@@ -9,14 +9,14 @@ nav:
   brand: "احذف التقنية الكبرى"
   links:
     - label: المسارات
-      to: "#tracks"
+      to: "/#tracks"
     - label: الجدول الزمني
-      to: "#timeline"
+      to: "/#timeline"
     - label: الأسئلة الشائعة
-      to: "#faq"
+      to: "/#faq"
   cta:
     label: "سجّل الآن ←"
-    to: "#register"
+    to: "/#register"
 
 hero:
   tag: "جوسا — هاكاثون مفتوح المصدر"
@@ -25,12 +25,12 @@ hero:
   date: "٩ يونيو – ١٨ يوليو ٢٠٢٦"
   primaryCta:
     label: "سجّل الآن ←"
-    to: "#register"
+    to: "/#register"
     color: primary
     size: lg
   secondaryCta:
     label: "اعرف المزيد ↓"
-    to: "#about"
+    to: "/#about"
     color: neutral
     variant: ghost
     size: lg
@@ -181,12 +181,12 @@ cta:
   description: "انضم إلى البنّائين الذين يعملون على أدوات عملية للملكية الرقمية والويب المفتوح."
   primaryCta:
     label: "سجّل الآن ←"
-    to: "#register"
+    to: "/#register"
     color: primary
     size: lg
   secondaryCta:
     label: "انضم للمجتمع ←"
-    to: "#"
+    to: "/#"
     color: neutral
     variant: outline
     size: lg
@@ -196,18 +196,18 @@ footer:
   tagline: "هاكاثون مفتوح المصدر من جوسا"
   eventLinks:
     - label: المسارات
-      to: "#tracks"
+      to: "/#tracks"
     - label: الجدول الزمني
-      to: "#timeline"
+      to: "/#timeline"
     - label: التحكيم
-      to: "#criteria"
+      to: "/#criteria"
     - label: الأسئلة الشائعة
-      to: "#faq"
+      to: "/#faq"
   connectLinks:
     - label: جيت هب
-      to: "#"
+      to: "/#"
     - label: إنستاغرام
-      to: "#"
+      to: "/#"
     - label: البريد الإلكتروني
-      to: "#"
+      to: "/#"
   copyright: "© ٢٠٢٦ جوسا. مفتوح المصدر، دائماً."
