@@ -10,7 +10,7 @@ defineProps<{
 
 <template>
   <section id="howitworks" class="py-16 sm:py-24 px-6 sm:px-10">
-    <div class="max-w-[1120px] mx-auto">
+    <div class="max-w-280 mx-auto">
       <div class="mb-12">
         <p class="bp-label mb-3">{{ data.tag }}</p>
         <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-heading">
@@ -24,13 +24,13 @@ defineProps<{
           :key="step.num"
           class="text-center"
         >
-          <div class="w-12 h-12 rounded-xs bg-[var(--bp-accent)] text-white flex items-center justify-center text-xl font-bold font-heading mb-4 mx-auto">
+          <div class="w-12 h-12 rounded-xs bg-(--bp-accent) text-white flex items-center justify-center text-xl font-bold font-heading mb-4 mx-auto">
             {{ step.num }}
           </div>
           <h3 class="font-bold text-xl font-heading mb-2">
             {{ step.title }}
           </h3>
-          <p class="text-[15px] leading-relaxed text-[var(--bp-text-secondary)]">
+          <p class="text-[15px] leading-relaxed text-(--bp-text-secondary)">
             {{ step.description }}
           </p>
         </div>

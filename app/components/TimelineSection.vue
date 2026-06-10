@@ -10,7 +10,7 @@ defineProps<{
 
 <template>
   <section id="timeline" class="py-16 sm:py-24 px-6 sm:px-10">
-    <div class="max-w-[1120px] mx-auto">
+    <div class="max-w-280 mx-auto">
       <div class="mb-12">
         <p class="bp-label mb-3">{{ data.tag }}</p>
         <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-heading">
@@ -35,17 +35,17 @@ defineProps<{
           <div
             class="absolute start-[-40px] top-1 w-4 h-4 rounded-full border-2"
             :class="i === 0
-              ? 'border-[var(--bp-accent)] bg-[var(--bp-accent)]'
+              ? 'border-(--bp-accent) bg-[var(--bp-accent)]'
               : 'border-[var(--bp-border)] bg-[var(--bp-bg)]'"
           />
 
-          <p class="font-heading text-[13px] font-semibold text-[var(--bp-accent)] tracking-[0.02em] mb-1">
+          <p class="font-heading text-[13px] font-semibold text-(--bp-accent) tracking-[0.02em] mb-1">
             {{ event.date }}
           </p>
-          <h4 class="font-bold text-[17px] font-heading mb-1">
+          <h4 class="font-bold text-lg font-heading mb-1">
             {{ event.title }}
           </h4>
-          <p class="text-sm leading-relaxed text-[var(--bp-text-secondary)]">
+          <p class="text-sm leading-relaxed text-(--bp-text-secondary)">
             {{ event.description }}
           </p>
         </div>

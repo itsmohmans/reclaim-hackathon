@@ -11,13 +11,13 @@ defineProps<{
 
 <template>
   <section id="tracks" class="bp-section-alt py-16 sm:py-24 px-6 sm:px-10">
-    <div class="max-w-[1120px] mx-auto">
+    <div class="max-w-280 mx-auto">
       <div class="mb-12">
         <p class="bp-label mb-3">{{ data.tag }}</p>
         <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-heading mb-3.5">
           {{ data.title }}
         </h2>
-        <p class="text-[17px] leading-relaxed text-[var(--bp-text-secondary)] max-w-[580px]">
+        <p class="text-lg leading-relaxed text-(--bp-text-secondary) max-w-145">
           {{ data.description }}
         </p>
       </div>
@@ -29,13 +29,13 @@ defineProps<{
           class="bp-card p-8"
         >
           <CornerMarks />
-          <span class="font-heading text-xs font-semibold text-[var(--bp-accent)] tracking-[0.05em]">
+          <span class="font-heading text-xs font-semibold text-(--bp-accent) tracking-wider">
             {{ track.num }}
           </span>
           <h3 class="font-bold text-xl font-heading mt-2 mb-2.5">
             {{ track.title }}
           </h3>
-          <p class="text-[15px] leading-relaxed text-[var(--bp-text-secondary)]">
+          <p class="text-[15px] leading-relaxed text-(--bp-text-secondary)">
             {{ track.description }}
           </p>
         </div>

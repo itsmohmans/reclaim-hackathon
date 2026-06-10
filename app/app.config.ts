@@ -7,13 +7,13 @@ export default defineAppConfig({
     header: {
       slots: {
         root: 'bg-transparent border-b border-transparent data-[scrolled]:bg-[var(--bp-bg)] data-[scrolled]:border-[var(--bp-border)] transition-[background,border-color] duration-200',
-        container: 'max-w-[1120px]'
+        container: 'max-w-280'
       }
     },
     footer: {
       slots: {
         root: 'bg-[var(--bp-bg-dark)] text-[var(--bp-text-on-dark)]',
-        container: 'max-w-[1120px] border-t border-white/[0.06] py-12'
+        container: 'max-w-280 border-t border-white/[0.06] py-12'
       }
     },
     button: {
@@ -27,7 +27,7 @@ export default defineAppConfig({
         },
         variant: {
           ghost: {
-            base: '!bg-transparent text-[var(--bp-text-secondary)] hover:text-[var(--bp-text)] focus-visible:outline focus-visible:outline-[var(--bp-accent)] focus-visible:outline-offset-2',
+            base: '!bg-transparent text-(--bp-text-secondary) hover:text-[var(--bp-text)] focus-visible:outline focus-visible:outline-[var(--bp-accent)] focus-visible:outline-offset-2',
           }
         }
       }
@@ -43,7 +43,7 @@ export default defineAppConfig({
         root: 'max-w-[720px]',
         trigger: 'py-5 cursor-pointer',
         label: 'font-semibold text-base font-heading',
-        content: 'text-[15px] leading-relaxed text-[var(--bp-text-secondary)] pb-5'
+        content: 'text-[15px] leading-relaxed text-(--bp-text-secondary) pb-5'
       }
     },
     badge: {
@@ -51,10 +51,10 @@ export default defineAppConfig({
     pageSection: {
       slots: {
         root: 'py-16 sm:py-24',
-        container: 'max-w-[1120px]',
+        container: 'max-w-280',
         headline: 'bp-label mb-3',
         title: 'font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-heading',
-        description: 'text-[17px] leading-relaxed text-[var(--bp-text-secondary)] max-w-[580px]'
+        description: 'text-lg leading-relaxed text-(--bp-text-secondary) max-w-145'
       }
     },
     pageHero: {
@@ -62,7 +62,7 @@ export default defineAppConfig({
         root: 'min-h-[calc(100vh-64px)] flex flex-col justify-center items-center text-center py-10',
         container: 'max-w-[760px] relative z-10',
         title: 'font-bold text-[clamp(42px,6vw,80px)] leading-[1.04] font-heading',
-        description: 'text-[17px] leading-relaxed text-[var(--bp-text-secondary)] max-w-[540px] mx-auto',
+        description: 'text-lg leading-relaxed text-(--bp-text-secondary) max-w-[540px] mx-auto',
         links: 'gap-4 justify-center'
       }
     },
@@ -71,7 +71,7 @@ export default defineAppConfig({
         root: 'py-16 sm:py-24 bg-[var(--bp-bg-dark)] text-[var(--bp-text-on-dark)]',
         container: 'max-w-[600px] text-center',
         title: 'font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-heading text-[var(--bp-text-on-dark)]',
-        description: 'text-[17px] leading-relaxed text-[var(--bp-text-on-dark)]/60',
+        description: 'text-lg leading-relaxed text-[var(--bp-text-on-dark)]/60',
         links: 'gap-4 justify-center'
       }
     }

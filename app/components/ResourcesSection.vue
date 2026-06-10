@@ -11,13 +11,13 @@ defineProps<{
 
 <template>
   <section id="resources" class="bp-section-alt py-16 sm:py-24 px-6 sm:px-10">
-    <div class="max-w-[1120px] mx-auto">
+    <div class="max-w-280 mx-auto">
       <div class="mb-12">
         <p class="bp-label mb-3">{{ data.tag }}</p>
         <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-heading mb-3.5">
           {{ data.title }}
         </h2>
-        <p class="text-[17px] leading-relaxed text-[var(--bp-text-secondary)] max-w-[580px]">
+        <p class="text-lg  leading-relaxed text-(--bp-text-secondary) max-w-145">
           {{ data.description }}
         </p>
       </div>
@@ -29,10 +29,10 @@ defineProps<{
           class="bp-card px-6 py-5"
         >
           <CornerMarks :size="8" />
-          <h4 class="font-bold text-base font-heading mb-1 text-[var(--bp-accent)]">
+          <h4 class="font-bold text-base font-heading mb-1 text-(--bp-accent)">
             {{ resource.name }}
           </h4>
-          <p class="text-sm leading-relaxed text-[var(--bp-text-secondary)]">
+          <p class="text-sm leading-relaxed text-(--bp-text-secondary)">
             {{ resource.description }}
           </p>
         </div>

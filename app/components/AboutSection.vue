@@ -15,13 +15,13 @@ defineProps<{
 
 <template>
   <section id="about" class="py-16 sm:py-24 px-6 sm:px-10">
-    <div class="max-w-[1120px] mx-auto">
+    <div class="max-w-280 mx-auto">
       <div class="mb-12">
         <p class="bp-label mb-3">{{ data.tag }}</p>
         <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] mb-3.5">
           {{ data.title }}
         </h2>
-        <p class="text-[17px] leading-relaxed text-[var(--bp-text-secondary)] max-w-[580px]">
+        <p class="text-lg leading-relaxed text-(--bp-text-secondary) max-w-145">
           {{ data.description }}
         </p>
       </div>
@@ -33,13 +33,13 @@ defineProps<{
           class="bp-card p-7"
         >
           <CornerMarks />
-          <div class="w-9 h-9 rounded-xs bg-[var(--bp-accent-light)] flex items-center justify-center mb-4 text-[15px] font-bold text-[var(--bp-accent)] font-heading">
+          <div class="w-10 h-10 flex items-center justify-center mb-4 text-base font-bold text-(--bp-accent) font-heading">
             {{ i + 1 }}
           </div>
           <h3 class="font-bold text-lg mb-2">
             {{ pillar.title }}
           </h3>
-          <p class="text-[15px] leading-relaxed text-[var(--bp-text-secondary)]">
+          <p class="text-[15px] leading-relaxed text-(--bp-text-secondary)">
             {{ pillar.description }}
           </p>
         </div>
@@ -53,13 +53,13 @@ defineProps<{
           <p
             v-for="(para, i) in data.challenge.paragraphs"
             :key="i"
-            class="text-base leading-[1.7] text-[var(--bp-text-secondary)] mb-4 last:mb-0"
+            class="text-base leading-[1.7] text-(--bp-text-secondary) mb-4 last:mb-0"
           >
             {{ para }}
           </p>
         </div>
-        <div class="bp-card aspect-[4/3] flex items-center justify-center p-6">
-          <span class="font-heading text-[13px] text-[var(--bp-text-secondary)] opacity-50 text-center">
+        <div class="bp-card aspect-4/3 flex items-center justify-center p-6">
+          <span class="font-heading text-[13px] text-(--bp-text-secondary) opacity-50 text-center">
             [ illustration placeholder ]
           </span>
         </div>

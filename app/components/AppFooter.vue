@@ -12,7 +12,7 @@ defineProps<{
 
 <template>
   <footer class="bp-section-dark border-t border-white/[0.06]">
-    <div class="max-w-[1120px] mx-auto px-6 sm:px-10 py-12">
+    <div class="max-w-280 mx-auto px-6 sm:px-10 py-12">
       <div class="flex flex-col sm:flex-row justify-between items-start gap-8">
         <div>
           <p class="font-bold text-base font-heading mb-2">
