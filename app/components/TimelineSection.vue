@@ -33,10 +33,10 @@ defineProps<{
         >
           <!-- Dot -->
           <div
-            class="absolute start-[-40px] top-1 w-4 h-4 rounded-full border-2"
+            class="absolute -inset-s-10 top-1 w-4 h-4 rounded-full border-2"
             :class="i === 0
-              ? 'border-(--bp-accent) bg-[var(--bp-accent)]'
-              : 'border-[var(--bp-border)] bg-[var(--bp-bg)]'"
+              ? 'border-(--bp-accent) bg-(--bp-accent)'
+              : 'border-(--bp-border) bg-(--bp-bg)'"
           />
 
           <p class="font-heading text-[13px] font-semibold text-(--bp-accent) tracking-[0.02em] mb-1">
@@ -45,7 +45,7 @@ defineProps<{
           <h4 class="font-bold text-lg font-heading mb-1">
             {{ event.title }}
           </h4>
-          <p class="text-sm leading-relaxed text-(--bp-text-secondary)">
+          <p class="text-base leading-relaxed text-(--bp-text-secondary)">
             {{ event.description }}
           </p>
         </div>

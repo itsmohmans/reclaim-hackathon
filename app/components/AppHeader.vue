@@ -28,7 +28,7 @@ const toggleColorMode = () => {
       :items="data.links"
       variant="link"
       :ui="{
-        link: 'transition-colors hover:rounded-none hover:bg-transparent hover:outline hover:outline-dashed hover:text-(--bp-text-secondary)',
+        link: 'transition-colors hover:bg-transparent hover:outline hover:outline-dashed hover:text-(--bp-text-secondary)',
       }"
       class="hidden lg:flex"
     />
@@ -48,7 +48,7 @@ const toggleColorMode = () => {
         color="primary"
         variant="ghost"
         size="sm"
-        class="text-(--bp-text-secondary) font-medium max-lg:hidden transition-none focus-visible:outline focus-visible:outline-[var(--bp-accent)] focus-visible:outline-offset-2 rounded-sm cursor-pointer"
+        class="text-(--bp-text-secondary) font-medium max-lg:hidden transition-none focus-visible:outline focus-visible:outline-(--bp-accent) focus-visible:outline-offset-2 cursor-pointer"
       />
       <UButton
         :label="data.cta.label"

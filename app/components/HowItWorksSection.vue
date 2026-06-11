@@ -24,7 +24,7 @@ defineProps<{
           :key="step.num"
           class="text-center"
         >
-          <div class="w-12 h-12 rounded-xs bg-(--bp-accent) text-white flex items-center justify-center text-xl font-bold font-heading mb-4 mx-auto">
+          <div class="w-12 h-12 bg-(--bp-accent) text-white flex items-center justify-center text-xl font-bold font-heading mb-4 mx-auto">
             {{ step.num }}
           </div>
           <h3 class="font-bold text-xl font-heading mb-2">

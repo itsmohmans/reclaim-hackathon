@@ -63,7 +63,7 @@ const props = defineProps<{
           </UButton>
         </div>
   
-        <p class="text-lg font-bold text-(--bp-text-secondary) rounded-md px-4 py-2 inline-block">{{ data.date }}</p>
+        <p class="text-lg font-bold text-(--bp-text-secondary) px-4 py-2 inline-block">{{ data.date }}</p>
         
       </div>
     </div>
