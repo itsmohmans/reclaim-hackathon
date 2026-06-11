@@ -26,7 +26,7 @@ defineProps<{
         <div
           v-for="track in data.items"
           :key="track.num"
-          class="bp-card p-8"
+          class="bp-card bg-(--bp-bg)! p-8 hover:scale-105 hover:bg-(--bp-accent-light)! transition-all"
         >
           <CornerMarks />
           <span class="font-heading text-xs font-semibold text-(--bp-accent) tracking-wider">

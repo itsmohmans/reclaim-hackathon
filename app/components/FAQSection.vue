@@ -25,7 +25,7 @@ const accordionItems = computed(() =>
         </h2>
       </div>
 
-      <div class="max-w-[720px]">
+      <div class="max-w-180">
         <UAccordion
           :items="accordionItems"
           type="single"

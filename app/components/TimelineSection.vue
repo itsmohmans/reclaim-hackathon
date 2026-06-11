@@ -18,10 +18,10 @@ defineProps<{
         </h2>
       </div>
 
-      <div class="max-w-[600px] relative ps-10">
+      <div class="max-w-150 relative ps-10">
         <!-- Dashed vertical line -->
         <div
-          class="absolute start-[7px] top-2 bottom-2 w-0.5"
+          class="absolute inset-s-1.75 top-2 bottom-2 w-0.5"
           style="background: repeating-linear-gradient(to bottom, var(--bp-border) 0px, var(--bp-border) 6px, transparent 6px, transparent 12px)"
         />
 

@@ -29,7 +29,7 @@ defineProps<{
           class="flex-1 text-center rounded-xs relative p-7"
           :class="[
             prize.featured
-              ? 'border-2 max-sm:order-1 border-(--bp-accent) bg-(--bp-accent-light) sm:-translate-y-3'
+              ? 'border-2 max-sm:order-1 border-(--bp-accent) bg-(--bp-accent-light) hover:scale-105 transition-all sm:-translate-y-3'
               : 'bp-card max-sm:order-2'
           ]"
         >

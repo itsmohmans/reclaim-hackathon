@@ -18,7 +18,7 @@ defineProps<{
         </h2>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-200">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div
           v-for="(item, i) in data.items"
           :key="item.title"
@@ -29,10 +29,10 @@ defineProps<{
             {{ i + 1 }}
           </span>
           <div>
-            <h4 class="font-bold text-base font-heading mb-1">
+            <h4 class="font-bold text-xl font-heading mb-1">
               {{ item.title }}
             </h4>
-            <p class="text-sm leading-relaxed text-(--bp-text-secondary)">
+            <p class="text-base leading-relaxed text-(--bp-text-secondary)">
               {{ item.description }}
             </p>
           </div>
