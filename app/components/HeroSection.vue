@@ -48,13 +48,13 @@ const props = defineProps<{
         <div class="flex justify-center items-center gap-4 mb-7 flex-wrap">
           <UButton
             :label="data.primaryCta.label"
-            :to="data.primaryCta.to"
+            :to="$nuxt.$localePath(data.primaryCta.to)"
             color="primary"
             size="lg"
             class="hover:backdrop-blur-lg"
           />
           <UButton
-            :to="data.secondaryCta.to"
+            :to="$nuxt.$localePath(data.secondaryCta.to)"
             variant="ghost"
             size="lg"
             class="text-base font-medium text-(--bp-text-secondary) bg-(--bp-bg/95) backdrop-blur-xs"

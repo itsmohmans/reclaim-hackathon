@@ -11,23 +11,23 @@ defineProps<{
 
 <template>
   <section id="register" class="bp-section-dark py-16 sm:py-24 px-6 sm:px-10 text-center">
-    <div class="max-w-[600px] mx-auto">
-      <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-heading text-[var(--bp-text-on-dark)] mb-4 whitespace-pre-line">
+    <div class="max-w-150 mx-auto">
+      <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-heading text-(--bp-text-on-dark) mb-4 whitespace-pre-line">
         {{ data.title }}
       </h2>
-      <p class="text-lg leading-relaxed text-[var(--bp-text-on-dark)]/60 mb-9">
+      <p class="text-lg leading-relaxed text-(--bp-text-on-dark)/60 mb-9">
         {{ data.description }}
       </p>
       <div class="flex justify-center gap-4 flex-wrap">
         <UButton
           :label="data.primaryCta.label"
-          :to="data.primaryCta.to"
+          :to="$nuxt.$localePath(data.primaryCta.to)"
           color="primary"
           size="lg"
         />
         <UButton
           :label="data.secondaryCta.label"
-          :to="data.secondaryCta.to"
+          :to="$nuxt.$localePath(data.secondaryCta.to)"
           color="neutral"
           variant="outline"
           size="lg"

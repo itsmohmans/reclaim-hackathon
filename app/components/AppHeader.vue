@@ -19,7 +19,7 @@ const toggleColorMode = () => {
 <template>
   <UHeader>
     <template #left>
-      <NuxtLink to="/" class="font-bold text-lg font-heading">
+      <NuxtLink :to="$nuxt.$localePath('/')" class="font-bold text-lg font-heading">
         {{ data.brand }}
       </NuxtLink>
     </template>
@@ -64,15 +64,24 @@ const toggleColorMode = () => {
         :items="data.links.map(l => ({ label: l.label, to: l.to }))"
         orientation="vertical"
         :ui="{
-          linkLabel: 'w-full rtl:text-right'
+          linkLabel: 'w-full text-center text-xl p-4',
+          link: 'bg-(--bp-bg)'
         }"
       />
       <div class="mt-4 flex flex-col gap-2">
         <UButton
+          :label="data.cta.label"
+          :to="$nuxt.$localePath(data.cta.to)"
+          block
+          color="primary"
+          class="text-lg"
+          size="lg"
+        />
+        <UButton
           :icon="colorMode.value === 'dark' ? 'i-lucide-sun' : 'i-lucide-moon'"
           :label="colorMode.value === 'dark' ? (locale === 'en' ? 'Light Mode' : 'الوضع الفاتح') : (locale === 'en' ? 'Dark Mode' : 'الوضع الداكن')"
           color="neutral"
-          variant="soft"
+          variant="ghost"
           block
           @click="toggleColorMode"
         />
@@ -80,13 +89,7 @@ const toggleColorMode = () => {
           :label="locale === 'en' ? 'عربي' : 'English'"
           :to="switchLocalePath(otherLocale)"
           color="neutral"
-          variant="soft"
-          block
-        />
-        <UButton
-          :label="data.cta.label"
-          :to="data.cta.to"
-          color="primary"
+          variant="ghost"
           block
         />
       </div>
