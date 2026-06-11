@@ -35,11 +35,11 @@ useSeoMeta({
       <AboutSection :data="page.about" />
       <TracksSection :data="page.tracks" />
       <HowItWorksSection :data="page.howItWorks" />
-      <ResourcesSection :data="page.resources" />
-      <TimelineSection :data="page.timeline" />
       <CriteriaSection :data="page.criteria" />
-      <CommunitySection :data="page.community" />
       <PrizesSection :data="page.prizes" />
+      <TimelineSection :data="page.timeline" />
+      <ResourcesSection :data="page.resources" />
+      <CommunitySection :data="page.community" />
       <FAQSection :data="page.faq" />
       <CTASection :data="page.cta" />
     </UMain>

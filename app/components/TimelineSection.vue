@@ -9,7 +9,7 @@ defineProps<{
 </script>
 
 <template>
-  <section id="timeline" class="py-16 sm:py-24 px-6 sm:px-10">
+  <section id="timeline" class="bp-section-alt py-16 sm:py-24 px-6 sm:px-10">
     <div class="max-w-280 mx-auto">
       <div class="mb-12">
         <p class="bp-label mb-3">{{ data.tag }}</p>
