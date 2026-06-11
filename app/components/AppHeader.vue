@@ -52,7 +52,7 @@ const toggleColorMode = () => {
       />
       <UButton
         :label="data.cta.label"
-        :to="data.cta.to"
+        :to="$nuxt.$localePath(data.cta.to)"
         color="primary"
         size="sm"
         class="hidden sm:flex"
