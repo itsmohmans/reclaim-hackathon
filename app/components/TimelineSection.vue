@@ -1,11 +1,19 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   data: {
     tag: string
     title: string
     events: { date: string, title: string, description: string }[]
   }
 }>()
+const currentDateIndex = computed(() => {
+  return props.data.events.findIndex(event => {
+    const eventDateString = event.date.split(' - ')[0]?.replace(/(st|nd|rd|th)/, '') || event.date
+    const eventDate = new Date(eventDateString + ', 2026')
+    const today = new Date()
+    return eventDate >= today
+  }) - 1
+})
 </script>
 
 <template>
@@ -34,7 +42,7 @@ defineProps<{
           <!-- Dot -->
           <div
             class="absolute -inset-s-10 top-1 w-4 h-4 rounded-none border-2"
-            :class="i === 0
+            :class="i === 0 || i <= currentDateIndex
               ? 'border-(--bp-accent) bg-(--bp-accent)'
               : 'border-(--bp-border) bg-(--bp-bg)'"
           />
