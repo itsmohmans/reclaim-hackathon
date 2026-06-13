@@ -36,8 +36,7 @@ const currentDateIndex = computed(() => {
         <div
           v-for="(event, i) in data.events"
           :key="event.title"
-          class="relative"
-          :class="{ 'pb-9': i < data.events.length - 1 }"
+          class="relative pb-9"
         >
           <!-- Dot -->
           <div
@@ -47,7 +46,7 @@ const currentDateIndex = computed(() => {
               : 'border-(--bp-border) bg-(--bp-bg)'"
           />
 
-          <p class="font-heading text-[13px] font-semibold text-(--bp-accent) tracking-[0.02em] mb-1">
+          <p class="font-heading text-sm font-semibold text-(--bp-accent) tracking-[0.02em] mb-1">
             {{ event.date }}
           </p>
           <h4 class="font-bold text-lg font-heading mb-1">
