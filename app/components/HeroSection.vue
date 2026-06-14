@@ -40,10 +40,10 @@ const props = defineProps<{
         {{ data.title }}
       </h1>
 
-      <div class="flex flex-col items-center bg-(--bp-bg) py-2 px-4">
-        <p class="text-lg leading-relaxed text-(--bp-text-secondary) max-w-135 mx-auto mb-9 px-4 py-2">
+      <div class="flex flex-col items-center py-2 px-4">
+        <!-- <p class="text-lg leading-relaxed text-(--bp-text-secondary) max-w-135 mx-auto mb-9 px-4 py-2">
           {{ data.description }}
-        </p>
+        </p> -->
   
         <div class="flex justify-center items-center gap-4 mb-7 flex-wrap">
           <UButton
@@ -63,7 +63,7 @@ const props = defineProps<{
           </UButton>
         </div>
   
-        <p class="text-lg font-bold text-(--bp-text-secondary) px-4 py-2 inline-block">{{ data.date }}</p>
+        <p class="text-lg font-bold text-(--bp-text-secondary) bg-(--bp-bg/95) backdrop-blur-xs p-2 inline-block">{{ data.date }}</p>
         
       </div>
     </div>
