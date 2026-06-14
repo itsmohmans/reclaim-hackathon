@@ -1,9 +1,5 @@
 export default defineAppConfig({
   ui: {
-    colors: {
-      primary: 'copper',
-      neutral: 'stone'
-    },
     header: {
       slots: {
         root: 'bg-transparent border-b border-transparent data-[scrolled]:bg-[var(--bp-bg)] data-[scrolled]:border-[var(--bp-border)] transition-[background,border-color] duration-200',

@@ -7,29 +7,31 @@
 @source "../../../content/**/*";
 
 :root {
-  --bp-bg: #F8F6F2;
-  --bp-bg-alt: #EDEAE4;
-  --bp-bg-dark: #2A2520;
-  --bp-text: #1E1B18;
-  --bp-text-secondary: #7A7168;
-  --bp-text-on-dark: #F8F6F2;
-  --bp-accent: #C4722E;
-  --bp-accent-light: #FFF3E8;
-  --bp-border: #D8D3CA;
-  --bp-dot: #D8D3CA;
+  --ui-primary: #0891A8;
+  --bp-bg: #F2F7FA;
+  --bp-bg-alt: #E5ECF1;
+  --bp-bg-dark: #141A22;
+  --bp-text: #1A2028;
+  --bp-text-secondary: #5A6874;
+  --bp-text-on-dark: #E2E9F0;
+  --bp-accent: #0891A8;
+  --bp-accent-light: #E0F5F7;
+  --bp-border: #C5D0D8;
+  --bp-dot: #C5D0D8;
 }
 
 .dark {
-  --bp-bg: #191613;
-  --bp-bg-alt: #211D19;
-  --bp-bg-dark: #100E0B;
-  --bp-text: #E8E4DC;
-  --bp-text-secondary: #9A9088;
-  --bp-text-on-dark: #E8E4DC;
-  --bp-accent: #D4823E;
-  --bp-accent-light: #2E2218;
-  --bp-border: #3A342C;
-  --bp-dot: #2E2820;
+  --ui-primary: var(--color-electricblue-500);
+  --bp-bg: #181D24;
+  --bp-bg-alt: #1E2530;
+  --bp-bg-dark: #0E1218;
+  --bp-text: #E2E9F0;
+  --bp-text-secondary: #8A95A2;
+  --bp-text-on-dark: #E2E9F0;
+  --bp-accent: #00D5E3;
+  --bp-accent-light: #0D1F24;
+  --bp-border: #2A3340;
+  --bp-dot: #222A35;
 }
 
 @theme static {
@@ -48,18 +50,30 @@
   --color-copper-800: #6B3D13;
   --color-copper-900: #4A2A0D;
   --color-copper-950: #2D1908;
+
+  --color-electricblue-50: #E8F9FA;
+  --color-electricblue-100: #C1F0F2;
+  --color-electricblue-200: #99E7E9;
+  --color-electricblue-300: #70DCE0;
+  --color-electricblue-400: #47D1D7;
+  --color-electricblue-500: #00D5E3;
+  --color-electricblue-600: #00A9B0;
+  --color-electricblue-700: #007D7C;
+  --color-electricblue-800: #004F4D;
+  --color-electricblue-900: #00211F;
+  --color-electricblue-950: #00100F;
   
-  --color-stone-50: #F8F6F2;
-  --color-stone-100: #EDEAE4;
-  --color-stone-200: #D8D3CA;
-  --color-stone-300: #B9AFA3;
-  --color-stone-400: #9B8B7C;
-  --color-stone-500: #7A7168;
-  --color-stone-600: #5E564D;
-  --color-stone-700: #423B32;
-  --color-stone-800: #261F1A;
-  --color-stone-900: #0D0A05;
-  --color-stone-950: #050301;
+  --color-stone-50: #F2F7FA;
+  --color-stone-100: #E5ECF1;
+  --color-stone-200: #C5D0D8;
+  --color-stone-300: #A0AEB8;
+  --color-stone-400: #7B8C98;
+  --color-stone-500: #5A6874;
+  --color-stone-600: #465460;
+  --color-stone-700: #34404C;
+  --color-stone-800: #222C36;
+  --color-stone-900: #141A22;
+  --color-stone-950: #0E1218;
 }
 
 [dir="rtl"] {
@@ -81,7 +95,7 @@ body {
 }
 ::selection {
   background: var(--bp-accent);
-  color: var(--bp-text-on-dark);
+  color: var(--color-electricblue-950);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -104,11 +118,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bp-card {
-  background: transparent;
   border: 1px dashed var(--bp-border);
   border-radius: 4px;
   position: relative;
-  @apply bg-(--bp-bg)! hover:scale-105 hover:bg-(--bp-accent-light)! transition-all;
+  @apply bg-(--bp-bg-alt/70)! hover:scale-105 hover:bg-(--bp-accent-light)! transition-all;
 }
 
 .bp-label {

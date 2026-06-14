@@ -56,6 +56,7 @@ const toggleColorMode = () => {
         color="primary"
         size="sm"
         class="hidden sm:flex"
+        :trailing-icon="locale === 'en' ? 'solar:arrow-right-linear' : 'solar:arrow-left-linear'"
       />
     </template>
 
@@ -76,6 +77,7 @@ const toggleColorMode = () => {
           color="primary"
           class="text-lg"
           size="lg"
+          :trailing-icon="locale === 'en' ? 'solar:arrow-right-linear' : 'solar:arrow-left-linear'"
         />
         <UButton
           :icon="colorMode.value === 'dark' ? 'i-lucide-sun' : 'i-lucide-moon'"
