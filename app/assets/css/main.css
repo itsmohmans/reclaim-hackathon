@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
-@import "../fonts/ibm-plex-sans-arabic.css";
+@import "../fonts/rubik.css";
 @import "../fonts/space-grotesk.css";
 @import "../fonts/alexandria.css";
 
@@ -34,7 +34,7 @@
 
 @theme static {
   --font-sans: 'Space Grotesk', sans-serif;
-  --font-body: 'IBM Plex Sans Arabic', sans-serif;
+  --font-body: 'Rubik', sans-serif;
   --font-heading: 'Space Grotesk', monospace, sans-serif;
 
   --color-copper-50: #FFF3E8;
