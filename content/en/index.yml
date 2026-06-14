@@ -2,11 +2,11 @@ locale: en
 dir: ltr
 
 seo:
-  title: "Delete Big Tech — Open Source Hackathon by JOSA"
+  title: "Reclaim — Open Source Hackathon by JOSA"
   description: "A university-led open source hackathon focused on digital ownership, interoperability, and building practical tools for a healthier open web."
 
 nav:
-  brand: "Delete Big Tech"
+  brand: "Reclaim"
   links:
     - label: Tracks
       to: "/#tracks"
@@ -15,7 +15,7 @@ nav:
     - label: FAQ
       to: "/#faq"
   cta:
-    label: "Register →"
+    label: "Register"
     to: "/#register"
 
 hero:
@@ -24,12 +24,12 @@ hero:
   description: "Build practical tools that make it easier for people to own their data, migrate away from platform lock-in, and participate in a healthier open web."
   date: "July 4th - July 19th, 2026"
   primaryCta:
-    label: "Register Now →"
+    label: "Register Now"
     to: "/#register"
     color: primary
     size: lg
   secondaryCta:
-    label: "Learn More ↓"
+    label: "Learn More"
     to: "/#about"
     color: neutral
     variant: ghost
@@ -155,14 +155,14 @@ prizes:
   items:
     - place: "2nd"
       label: "Runner Up"
-      amount: "$300"
+      amount: "500 JOD"
     - place: "1st"
       label: "Grand Prize"
-      amount: "$500"
+      amount: "1000 JOD"
       featured: true
     - place: "3rd"
       label: "Third Place"
-      amount: "$150"
+      amount: "250 JOD"
 
 faq:
   tag: "FAQ"
@@ -183,19 +183,19 @@ cta:
   title: "Ready to Build\na Better Web?"
   description: "Join builders working on practical tools for digital ownership and the open web."
   primaryCta:
-    label: "Register Now →"
+    label: "Register Now"
     to: "/#register"
     color: primary
     size: lg
   secondaryCta:
-    label: "Join Community →"
+    label: "Join Community"
     to: "/#"
     color: neutral
     variant: outline
     size: lg
 
 footer:
-  brand: "Delete Big Tech"
+  brand: "Reclaim"
   tagline: "An open source hackathon by JOSA"
   eventLinks:
     - label: Tracks

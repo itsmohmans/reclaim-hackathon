@@ -15,7 +15,7 @@ nav:
     - label: الأسئلة الشائعة
       to: "/#faq"
   cta:
-    label: "سجّل الآن ←"
+    label: "سجّل الآن"
     to: "/#register"
 
 hero:
@@ -24,12 +24,12 @@ hero:
   description: "ابنِ أدوات عملية تسهّل على الناس امتلاك بياناتهم، والتحرر من احتكار المنصات، والمشاركة في شبكة إنترنت مفتوحة وصحية."
   date: "4 - 19 تموز 2026"
   primaryCta:
-    label: "سجّل الآن ←"
+    label: "سجّل الآن"
     to: "/#register"
     color: primary
     size: lg
   secondaryCta:
-    label: "اعرف المزيد ↓"
+    label: "اعرف المزيد"
     to: "/#about"
     color: neutral
     variant: ghost
@@ -183,12 +183,12 @@ cta:
   title: "مستعد لبناء\nويب أفضل؟"
   description: "انضم إلى البنّائين الذين يعملون على أدوات عملية للملكية الرقمية والويب المفتوح."
   primaryCta:
-    label: "سجّل الآن ←"
+    label: "سجّل الآن"
     to: "/#register"
     color: primary
     size: lg
   secondaryCta:
-    label: "انضم للمجتمع ←"
+    label: "انضم للمجتمع"
     to: "/#"
     color: neutral
     variant: outline

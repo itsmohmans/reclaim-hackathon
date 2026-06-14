@@ -9,6 +9,7 @@ const props = defineProps<{
     secondaryCta: { label: string, to: string, color?: string, variant?: string, size?: string }
   }
 }>()
+const { locale } = useI18n()
 </script>
 
 <template>
@@ -55,18 +56,20 @@ const props = defineProps<{
             color="primary"
             size="lg"
             class="hover:backdrop-blur-lg"
+            :trailing-icon="locale === 'en' ? 'solar:arrow-right-linear' : 'solar:arrow-left-linear'"
           />
           <UButton
             :to="$nuxt.$localePath(data.secondaryCta.to)"
             variant="ghost"
             size="lg"
-            class="text-base font-medium text-(--bp-text-secondary) bg-(--bp-bg/95) backdrop-blur-xs"
+            class="text-base font-medium bg-(--bp-bg/95) backdrop-blur-xs"
+            trailing-icon="solar:arrow-down-linear"
           >
             {{ data.secondaryCta.label }}
           </UButton>
         </div>
   
-        <p class="text-lg font-bold text-(--bp-text-secondary) bg-(--bp-bg/95) backdrop-blur-xs p-2 inline-block">{{ data.date }}</p>
+        <p class="text-lg font-medium text-(--bp-text) bg-(--bp-bg/95) backdrop-blur-xs p-2 inline-block">{{ data.date }}</p>
         
       </div>
     </div>

@@ -7,6 +7,7 @@ defineProps<{
     secondaryCta: { label: string, to: string, color?: string, variant?: string, size?: string }
   }
 }>()
+const { locale } = useI18n()
 </script>
 
 <template>
@@ -24,6 +25,7 @@ defineProps<{
           :to="$nuxt.$localePath(data.primaryCta.to)"
           color="primary"
           size="lg"
+          :trailing-icon="locale === 'en' ? 'solar:arrow-right-linear' : 'solar:arrow-left-linear'"
         />
         <UButton
           :label="data.secondaryCta.label"
@@ -32,6 +34,7 @@ defineProps<{
           variant="outline"
           size="lg"
           class="border-white/20 hover:bg-white/70"
+          :trailing-icon="locale === 'en' ? 'solar:arrow-right-linear' : 'solar:arrow-left-linear'"
         />
       </div>
     </div>
