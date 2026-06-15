@@ -181,13 +181,21 @@ criteria:
         - "Import/Export Formats"
     - title: "AI Usage"
       description: "AI-assisted development is allowed. However, projects must be understandable, maintainable, documented, and demonstrably owned by the team.\nYou may vibe and you may code but don’t vibe code as Judges may penalize projects that consist primarily of unmaintainable AI-generated code (aka AI slop)."
-
+  disqualification:
+    title: "Disqualifiers"
+    description: "Projects that meet any of the following criteria will be disqualified:"
+    items:
+      - "<strong>Using buzzwords without substance</strong>: Projects that claim to use trendy technologies (like AI, blockchain, etc.) without a clear explanation of how they are used or why they are necessary."
+      - "<strong>Vague Problem Statement</strong>: Projects that do not clearly articulate the problem they are solving or the users they are targeting."
+      - "<strong>Unrealistic Scope</strong>: Projects that attempt to recreate an entire platform or company, or are not maintainable after the event."
+      - "<strong>Privacy Violations</strong>: Projects that do not respect user privacy or data ownership principles."
+      - "<strong>AI Slop</strong>: Projects that consist primarily of unmaintainable AI-generated code without clear ownership and documentation by the team."
 community:
   tag: "Why This Matters"
   title: "More Than a Competition"
   paragraphs:
-    - "This hackathon isn't about building the next startup. It's about building the tools and infrastructure that make the internet work better for everyone."
-    - "Join a community of builders who believe the web should be open, interoperable, owned by its users and most importantly not controlled by a handful of corporations."
+    - "This hackathon isn't about building the next startup. It's about building the tools and infrastructure that make tech work better for everyone."
+    - "Join a community of builders who believe tech should be open, interoperable, owned by its users and most importantly not controlled by a handful of corporations."
 
 prizes:
   tag: "Prizes"

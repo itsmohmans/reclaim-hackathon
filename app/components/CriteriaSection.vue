@@ -5,6 +5,11 @@ defineProps<{
     title: string
     description: string
     items: { title: string, description: string, examplesTitle?: string, examples?: string[] }[]
+    disqualification: {
+      title: string
+      description: string
+      items: string[]
+    }
   }
 }>()
 const expandedCriteria = ref<Set<string>>(new Set())
@@ -71,6 +76,22 @@ const toggleExamples = (num: string) => {
           </div>
           </div>
         </div>
+      </div>
+      <div v-if="data.disqualification" class="mt-12">
+        <h3 class="font-bold text-2xl font-heading mb-4">
+          {{ data.disqualification.title }}
+        </h3>
+        <p class="text-base leading-relaxed whitespace-pre-line text-(--bp-text-secondary) mb-4">
+          {{ data.disqualification.description }}
+        </p>
+        <ul class="list-disc ps-6 space-y-2 text-(--bp-text-secondary)">
+          <li
+            v-for="(item, i) in data.disqualification.items"
+            :key="i"
+            class="text-base leading-relaxed"
+            v-html="item"
+          />
+        </ul>
       </div>
     </div>
   </section>

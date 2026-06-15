@@ -98,7 +98,12 @@ const homepageSchema = z.object({
       description: z.string(),
       examplesTitle: z.string().optional(),
       examples: z.array(z.string()).optional()
-    }))
+    })),
+    disqualification: z.object({
+      title: z.string(),
+      description: z.string(),
+      items: z.array(z.string())
+    })
   }),
 
   community: z.object({
