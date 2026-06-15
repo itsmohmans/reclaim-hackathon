@@ -20,7 +20,8 @@ const toggleColorMode = () => {
   <UHeader>
     <template #left>
       <NuxtLink :to="$nuxt.$localePath('/')" class="font-bold text-lg font-heading">
-        {{ data.brand }}
+        <img src="/reclaim-dark.svg" alt="reclaim logo" class=" w-28 object-fill light:hidden" />
+        <img src="/reclaim-light.svg" alt="reclaim logo" class=" w-28 object-fill dark:hidden" />
       </NuxtLink>
     </template>
 
