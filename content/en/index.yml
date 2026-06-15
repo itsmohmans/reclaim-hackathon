@@ -109,7 +109,7 @@ howItWorks:
 resources:
   tag: "Inspiration"
   title: "Projects to Explore"
-  description: "Get inspired by these open source projects that embody the spirit of the open web. Get ideas, learn from their approaches, or even build on top of them."
+  description: "Get inspired by these open source projects that embody the spirit of this hackathon. Get ideas, learn from their approaches, or even build on top of them."
   items:
     - name: "Matrix"
       description: "Decentralized, end-to-end encrypted communication protocol."
