@@ -33,10 +33,10 @@ defineProps<{
           class="bp-card p-7"
         >
           <CornerMarks />
-          <div class="w-10 h-10 flex items-center justify-center mb-4 text-base font-bold text-(--bp-accent) font-heading">
+          <div class="font-heading text-xs font-semibold text-(--bp-accent) tracking-wider">
             {{ i + 1 }}
           </div>
-          <h3 class="font-bold text-lg mb-2">
+          <h3 class="font-bold text-lg mb-2.5 mt-2">
             {{ pillar.title }}
           </h3>
           <p class="text-[15px] leading-relaxed text-(--bp-text-secondary)">
