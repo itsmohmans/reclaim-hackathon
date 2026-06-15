@@ -44,26 +44,6 @@ defineProps<{
           </p>
         </div>
       </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h3 class="font-bold text-[clamp(24px,2.5vw,32px)] leading-[1.2] mb-4">
-            {{ data.challenge.title }}
-          </h3>
-          <p
-            v-for="(para, i) in data.challenge.paragraphs"
-            :key="i"
-            class="text-base leading-[1.7] text-(--bp-text-secondary) mb-4 last:mb-0"
-          >
-            {{ para }}
-          </p>
-        </div>
-        <div class="bp-card aspect-4/3 flex items-center justify-center p-6">
-          <span class="font-heading text-[13px] text-(--bp-text-secondary) opacity-50 text-center">
-            [ illustration placeholder ]
-          </span>
-        </div>
-      </div>
     </div>
   </section>
 </template>

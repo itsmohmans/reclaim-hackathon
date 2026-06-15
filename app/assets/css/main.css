@@ -118,9 +118,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bp-card {
+  position: relative;
   border: 1px dashed var(--bp-border);
   border-radius: 4px;
-  @apply relative bg-(--bp-bg-alt/70)! hover:scale-105 hover:bg-(--bp-accent-light)! transition-all;
+  background: color-mix(in srgb, var(--bp-bg-alt) 70%, transparent);
+  @apply hover:scale-105 hover:bg-(--bp-accent-light)! transition-all;
 }
 
 .bp-label {
