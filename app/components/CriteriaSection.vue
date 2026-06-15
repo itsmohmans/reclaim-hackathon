@@ -3,9 +3,19 @@ defineProps<{
   data: {
     tag: string
     title: string
-    items: { title: string, description: string }[]
+    description: string
+    items: { title: string, description: string, examplesTitle?: string, examples?: string[] }[]
   }
 }>()
+const expandedCriteria = ref<Set<string>>(new Set())
+
+const toggleExamples = (num: string) => {
+  if (expandedCriteria.value.has(num)) {
+    expandedCriteria.value.delete(num)
+  } else {
+    expandedCriteria.value.add(num)
+  }
+}
 </script>
 
 <template>
@@ -13,9 +23,12 @@ defineProps<{
     <div class="max-w-280 mx-auto">
       <div class="mb-12">
         <p class="bp-label mb-3">{{ data.tag }}</p>
-        <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-heading">
+        <h2 class="font-bold text-[clamp(28px,3.5vw,44px)] leading-[1.15] font-heading mb-3.5">
           {{ data.title }}
         </h2>
+        <p class="text-lg leading-relaxed text-(--bp-text-secondary) max-w-145">
+          {{ data.description }}
+        </p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -32,9 +45,30 @@ defineProps<{
             <h4 class="font-bold text-xl font-heading mb-1">
               {{ item.title }}
             </h4>
-            <p class="text-base leading-relaxed text-(--bp-text-secondary)">
+            <p class="text-base leading-relaxed whitespace-pre-line text-(--bp-text-secondary)">
               {{ item.description }}
             </p>
+            <div v-if="item.examples?.length" class="mt-4">
+            <UButton
+              :label="item.examplesTitle || 'Examples'"
+              :trailing-icon="expandedCriteria.has(item.title) ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'"
+              variant="ghost"
+              size="sm"
+              @click="toggleExamples(item.title)"
+            />
+            <ul
+              v-show="expandedCriteria.has(item.title)"
+              class="mt-2 space-y-1.5 ps-4"
+            >
+              <li
+                v-for="example in item.examples"
+                :key="example"
+                class="text-sm leading-relaxed text-(--bp-text-secondary) list-disc"
+              >
+                {{ example }}
+              </li>
+            </ul>
+          </div>
           </div>
         </div>
       </div>

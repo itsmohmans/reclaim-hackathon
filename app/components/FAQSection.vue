@@ -30,6 +30,9 @@ const accordionItems = computed(() =>
           :items="accordionItems"
           type="single"
           collapsible
+          :ui="{
+            body: 'text-base whitespace-pre-line'
+          }"
         />
       </div>
     </div>

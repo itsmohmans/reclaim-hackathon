@@ -52,9 +52,7 @@ const currentDateIndex = computed(() => {
           <h4 class="font-bold text-lg font-heading mb-1">
             {{ event.title }}
           </h4>
-          <p class="text-base leading-relaxed text-(--bp-text-secondary)">
-            {{ event.description }}
-          </p>
+          <p class="text-base leading-relaxed text-(--bp-text-secondary)" v-html="event.description" />
         </div>
       </div>
     </div>
