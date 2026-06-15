@@ -41,6 +41,7 @@ useSeoMeta({
       <ResourcesSection :data="page.resources" />
       <CommunitySection :data="page.community" />
       <FAQSection :data="page.faq" />
+      <SponsorsSection :data="page.sponsors" />
       <CTASection :data="page.cta" />
     </UMain>
 

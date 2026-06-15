@@ -241,6 +241,16 @@ cta:
     variant: outline
     size: lg
 
+sponsors:
+  title: "Made possible by"
+  items:
+    - name: "JOSA"
+      logo: "/logo-josa.png"
+      url: "https://josa.ngo"
+    - name: "Drosos Foundation"
+      logo: "/drosos-logo.png"
+      url: "https://drosos.org"
+
 footer:
   brand: "Reclaim"
   tagline: "An open source hackathon by JOSA"

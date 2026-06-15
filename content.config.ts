@@ -133,6 +133,15 @@ const homepageSchema = z.object({
     }))
   }),
 
+  sponsors: z.object({
+    title: z.string(),
+    items: z.array(z.object({
+      name: z.string(),
+      logo: z.string(),
+      url: z.string()
+    }))
+  }),
+
   cta: z.object({
     title: z.string(),
     description: z.string(),

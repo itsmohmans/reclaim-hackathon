@@ -194,6 +194,16 @@ cta:
     variant: outline
     size: lg
 
+sponsors:
+  title: "بدعم من"
+  items:
+    - name: "جوسا"
+      logo: "/logo-josa.png"
+      url: "https://josa.ngo"
+    - name: "مؤسسة دروسوس"
+      logo: "/drosos-logo.png"
+      url: "https://drosos.org"
+
 footer:
   brand: "احذف التقنية الكبرى"
   tagline: "هاكاثون مفتوح المصدر من جوسا"
