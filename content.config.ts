@@ -54,7 +54,9 @@ const homepageSchema = z.object({
     items: z.array(z.object({
       num: z.string(),
       title: z.string(),
-      description: z.string()
+      description: z.string(),
+      examplesTitle: z.string().optional(),
+      examples: z.array(z.string()).optional()
     }))
   }),
 

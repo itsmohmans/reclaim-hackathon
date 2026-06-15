@@ -40,16 +40,18 @@ about:
   title: "A Hackathon for the Open Web"
   description: "The web is increasingly controlled by a handful of corporations. We're building the alternative."
   pillars:
-    - title: "Own Your Data"
-      description: "Build tools that let people export, control, and truly own their personal data. No more platform lock-in."
-    - title: "Connect Everything"
-      description: "Create bridges between services and protocols so the open web can actually work together."
-    - title: "Build for Everyone"
-      description: "Make open-source alternatives that real people — not just developers — can actually use."
+    - title: "Escape Vendor Lock-In"
+      description: "How can users leave a platform without losing their data, content, contacts, or workflows?"
+    - title: "Bridge Closed and Open Worlds"
+      description: "How can people interact with open ecosystems without forcing everyone else to migrate first?"
+    - title: "Make Open Alternatives Easier"
+      description: "Many open-source alternatives already exist. Why aren't people using them? Build tools that remove friction."
+    - title: "Remove Digital Friction"
+      description: "Automate annoying, repetitive, bloated, or unnecessarily complex workflows."
   challenge:
-    title: "The Challenge"
+    title: "Challenges to Conquer"
     paragraphs:
-      - "Your data, your social connections, your creative work — all locked inside platforms that can change the rules whenever they want. We believe it doesn't have to be this way."
+      - "Your data, your social connections, your creative work, all locked inside platforms that can change the rules whenever they want. We believe it doesn’t have to be this way."
       - "Build tools that give people real choices: to migrate, to self-host, to own what's theirs."
 
 tracks:
@@ -58,17 +60,37 @@ tracks:
   description: "Pick a track that matches your interests. Each one addresses a different facet of the open web."
   items:
     - num: "1"
-      title: "Grandma-friendly Replacement"
-      description: "Open-source alternatives to everyday tools, designed for real people. Email, messaging, photo sharing — usable without a CS degree."
+      title: "UX & Accessibility / Grandma-Friendly"
+      description: "Open source alternatives to simple tools, designed for real people; email, messaging, and photo sharing. Using the tools shouldn’t require knowing 5 programming languages."
+      examplesTitle: "Example Focus Areas"
+      examples:
+        - "Onboarding & Setup Simplification"
+        - "Focus on Accessibility & Usability"
+        - "Mobile-First Design"
+        - "Beginner-Friendly Interfaces"
     - num: "2"
       title: "Open Infrastructure Tooling"
-      description: "Self-hosting, deployment, server management. Make running your own infrastructure as easy as clicking \"sign up.\""
+      description: "From deployment to server management. Make running your own infrastructure as easy as logging in a social media app."
+      examplesTitle: "Example Focus Areas"
+      examples:
+        - "Auth and OAuth Systems"
+        - "Self-Hosting & Deployment Tools"
+        - "Federated Services & Tools"
     - num: "3"
-      title: "CLI Tools"
-      description: "Command-line utilities for the open-source ecosystem. Migration scripts, protocol tools, developer workflows."
+      title: "Communication Freedom / Interoperability & Bridges"
+      description: "Keep using popular messaging apps and social media platforms without the downsides of invasive big tech practices or asking contacts to migrate."
+      examplesTitle: "Example Focus Areas"
+      examples:
+        - "Connecting closed and open ecosystems."
+        - "Bridging protocols and platforms."
     - num: "4"
-      title: "Data Ownership"
-      description: "Tools that help people export and migrate their data from centralized platforms. Make switching services painless."
+      title: "Local-First & Data Ownership"
+      description: "Make switching services painless with tools that help people escape centralized platforms, create tools to help export and migrate one’s data as they like."
+      examplesTitle: "Example Focus Areas"
+      examples:
+        - "Tools for file ownership, syncing, backup, portability, and migration."
+        - "Offline-First & Local-First Architectures"
+        - "Peer-to-Peer Data Sharing"
 
 howItWorks:
   tag: "How It Works"
@@ -79,10 +101,10 @@ howItWorks:
       description: "Sign up solo or with a team of up to 4. All skill levels welcome."
     - num: "2"
       title: "Build"
-      description: "Choose a track, pick a problem, and start hacking. Mentors and resources available throughout."
+      description: "Choose a track, pick a problem, and hack away. Mentors and resources will be available throughout."
     - num: "3"
       title: "Submit"
-      description: "Present your project to judges and the community. Ship something real."
+      description: "Present your project to judges and the community. The goal is to ship something real."
 
 resources:
   tag: "Ecosystem"

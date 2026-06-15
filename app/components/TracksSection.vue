@@ -4,9 +4,19 @@ defineProps<{
     tag: string
     title: string
     description: string
-    items: { num: string, title: string, description: string }[]
+    items: { num: string, title: string, description: string, examplesTitle?: string, examples?: string[] }[]
   }
 }>()
+
+const expandedTracks = ref<Set<string>>(new Set())
+
+const toggleExamples = (num: string) => {
+  if (expandedTracks.value.has(num)) {
+    expandedTracks.value.delete(num)
+  } else {
+    expandedTracks.value.add(num)
+  }
+}
 </script>
 
 <template>
@@ -38,6 +48,28 @@ defineProps<{
           <p class="text-[15px] leading-relaxed text-(--bp-text-secondary)">
             {{ track.description }}
           </p>
+
+          <div v-if="track.examples?.length" class="mt-4">
+            <UButton
+              :label="track.examplesTitle || 'Examples'"
+              :trailing-icon="expandedTracks.has(track.num) ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'"
+              variant="ghost"
+              size="sm"
+              @click="toggleExamples(track.num)"
+            />
+            <ul
+              v-show="expandedTracks.has(track.num)"
+              class="mt-2 space-y-1.5 ps-4"
+            >
+              <li
+                v-for="example in track.examples"
+                :key="example"
+                class="text-sm leading-relaxed text-(--bp-text-secondary) list-disc"
+              >
+                {{ example }}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -26,16 +26,16 @@ defineProps<{
         </p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-20">
+      <div
+        class="grid grid-cols-1 gap-5 mb-20"
+        :class="data.pillars.length === 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2'"
+      >
         <div
-          v-for="(pillar, i) in data.pillars"
+          v-for="pillar in data.pillars"
           :key="pillar.title"
           class="bp-card p-7"
         >
           <CornerMarks />
-          <div class="font-heading text-xs font-semibold text-(--bp-accent) tracking-wider">
-            {{ i + 1 }}
-          </div>
           <h3 class="font-bold text-lg mb-2.5 mt-2">
             {{ pillar.title }}
           </h3>
