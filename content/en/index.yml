@@ -107,9 +107,9 @@ howItWorks:
       description: "Present your project to judges and the community. The goal is to ship something real."
 
 resources:
-  tag: "Ecosystem"
-  title: "Technologies to Explore"
-  description: "Get inspired by these open protocols and tools. Use them as building blocks for your project."
+  tag: "Inspiration"
+  title: "Projects to Explore"
+  description: "Get inspired by these open source projects that embody the spirit of the open web. Get ideas, learn from their approaches, or even build on top of them."
   items:
     - name: "Matrix"
       description: "Decentralized, end-to-end encrypted communication protocol."
