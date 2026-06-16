@@ -197,12 +197,19 @@ cta:
 sponsors:
   title: "بدعم من"
   items:
-    - name: "جوسا"
-      logo: "/logo-josa.png"
-      url: "https://josa.ngo"
     - name: "مؤسسة دروسوس"
-      logo: "/drosos-logo.png"
+      logo_dark: "/Drosos-Logo-RGB-White.svg"
+      logo_light: "/Drosos-Logo-RGB-Black.svg"
       url: "https://drosos.org"
+
+
+organizers:
+  title: "منظم من قبل"
+  items:
+    - name: "جوسا"
+      logo_dark: "/josa-logo-white-en.svg"
+      logo_light: "/josa-logo-black-en.svg"
+      url: "https://josa.ngo"
 
 footer:
   brand: "احذف التقنية الكبرى"

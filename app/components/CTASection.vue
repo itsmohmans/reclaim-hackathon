@@ -27,15 +27,6 @@ const { locale } = useI18n()
           size="lg"
           :trailing-icon="locale === 'en' ? 'solar:arrow-right-linear' : 'solar:arrow-left-linear'"
         />
-        <UButton
-          :label="data.secondaryCta.label"
-          :to="$nuxt.$localePath(data.secondaryCta.to)"
-          color="neutral"
-          variant="outline"
-          size="lg"
-          class="border-white/20 hover:bg-white/70"
-          :trailing-icon="locale === 'en' ? 'solar:arrow-right-linear' : 'solar:arrow-left-linear'"
-        />
       </div>
     </div>
   </section>
