@@ -16,16 +16,16 @@ nav:
       to: "/#faq"
   cta:
     label: "Register"
-    to: "/#register"
+    to: "https://surveys.josa.ngo/index.php/724737?newtest=Y&lang=en"
 
 hero:
-  tag: "JOSA — Open Source Hackathon"
-  title: "Infrastructure\nFor a Free Web"
+  tag: "A Hackathon for Open Tech by JOSA"
+  title: "Reclaim"
   description: "Build practical tools that make it easier for people to own their data, migrate away from platform lock-in, and participate in a healthier open web."
   date: "July 4th - July 19th, 2026"
   primaryCta:
     label: "Register Now"
-    to: "/#register"
+    to: "https://surveys.josa.ngo/index.php/724737?newtest=Y&lang=en"
     color: primary
     size: lg
   secondaryCta:
@@ -231,7 +231,7 @@ cta:
   description: "Join builders working on practical tools for digital ownership and the open internet."
   primaryCta:
     label: "Register Now"
-    to: "/#register"
+    to: "https://surveys.josa.ngo/index.php/724737?newtest=Y&lang=en"
     color: primary
     size: lg
   secondaryCta:
@@ -259,7 +259,7 @@ organizers:
 
 footer:
   brand: "Reclaim"
-  tagline: "An open source hackathon by JOSA"
+  tagline: "A Hackathon for Open Tech by JOSA"
   eventLinks:
     - label: Tracks
       to: "/#tracks"

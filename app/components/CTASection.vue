@@ -23,6 +23,7 @@ const { locale } = useI18n()
         <UButton
           :label="data.primaryCta.label"
           :to="$nuxt.$localePath(data.primaryCta.to)"
+          target="_blank"
           color="primary"
           size="lg"
           :trailing-icon="locale === 'en' ? 'solar:arrow-right-linear' : 'solar:arrow-left-linear'"

@@ -52,11 +52,12 @@ const { locale } = useI18n()
         <div class="flex justify-center items-center gap-4 mb-7 flex-wrap">
           <UButton
             :label="data.primaryCta.label"
-            :to="$nuxt.$localePath(data.primaryCta.to)"
+            :to="data.primaryCta.to"
             color="primary"
             size="lg"
             class="hover:backdrop-blur-lg"
             :trailing-icon="locale === 'en' ? 'solar:arrow-right-linear' : 'solar:arrow-left-linear'"
+            target="_blank"
           />
           <UButton
             :to="$nuxt.$localePath(data.secondaryCta.to)"
