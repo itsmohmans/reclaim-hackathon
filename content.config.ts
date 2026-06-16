@@ -93,6 +93,7 @@ const homepageSchema = z.object({
   criteria: z.object({
     tag: z.string(),
     title: z.string(),
+    description: z.string(),
     items: z.array(z.object({
       title: z.string(),
       description: z.string(),
@@ -137,7 +138,18 @@ const homepageSchema = z.object({
     title: z.string(),
     items: z.array(z.object({
       name: z.string(),
-      logo: z.string(),
+      logo_dark: z.string(),
+      logo_light: z.string(),
+      url: z.string()
+    }))
+  }),
+
+  organizers: z.object({
+    title: z.string(),
+    items: z.array(z.object({
+      name: z.string(),
+      logo_dark: z.string(),
+      logo_light: z.string(),
       url: z.string()
     }))
   }),

@@ -2,8 +2,8 @@ locale: en
 dir: ltr
 
 seo:
-  title: "Reclaim — Open Source Hackathon by JOSA"
-  description: "A university-led open source hackathon focused on digital ownership, interoperability, and building practical tools for a healthier open web."
+  title: "Reclaim: A Hackathon for Open Tech by JOSA"
+  description: "Jordan's hackathon on digital ownership, interoperability, and building practical and open tools for a healthier open web."
 
 nav:
   brand: "Reclaim"
@@ -242,14 +242,20 @@ cta:
     size: lg
 
 sponsors:
-  title: "Made possible by"
+  title: "Supported by"
+  items:
+    - name: "Drosos Foundation"
+      logo_dark: "/Drosos-Logo-RGB-White.svg"
+      logo_light: "/Drosos-Logo-RGB-Black.svg"
+      url: "https://drosos.org"
+
+organizers:
+  title: "Organized by"
   items:
     - name: "JOSA"
-      logo: "/logo-josa.png"
+      logo_dark: "/josa-logo-white-en.svg"
+      logo_light: "/josa-logo-black-en.svg"
       url: "https://josa.ngo"
-    - name: "Drosos Foundation"
-      logo: "/drosos-logo.png"
-      url: "https://drosos.org"
 
 footer:
   brand: "Reclaim"
