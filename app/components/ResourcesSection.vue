@@ -4,7 +4,7 @@ defineProps<{
     tag: string
     title: string
     description: string
-    items: { name: string, description: string }[]
+    items: { name: string, description: string, link: string }[]
   }
 }>()
 </script>
@@ -29,12 +29,14 @@ defineProps<{
           class="bp-card px-6 py-5"
         >
           <CornerMarks :size="8" />
-          <h4 class="font-bold text-base font-heading mb-1 text-(--bp-accent)">
-            {{ resource.name }}
-          </h4>
-          <p class="text-sm leading-relaxed text-(--bp-text-secondary)">
-            {{ resource.description }}
-          </p>
+          <NuxtLink :to="resource.link" target="_blank">
+            <h4 class="font-bold text-base font-heading mb-1 text-(--bp-accent)">
+              {{ resource.name }}
+            </h4>
+            <p class="text-sm leading-relaxed text-(--bp-text-secondary)">
+              {{ resource.description }}
+            </p>
+          </NuxtLink>
         </div>
       </div>
     </div>
