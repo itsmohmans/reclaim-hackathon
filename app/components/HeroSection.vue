@@ -41,9 +41,14 @@ const { locale } = useI18n()
         {{ data.title }}
       </h1> -->
 
-      <img src="/reclaim-dark.svg" alt="reclaim logo" class="mx-auto mb-6 h-24 object-fill light:hidden" />
-      <img src="/reclaim-light.svg" alt="reclaim logo" class="mx-auto mb-6 h-24 object-fill dark:hidden" />
-
+      <template v-if="locale === 'en'">  
+        <img src="/reclaim-dark.svg" alt="reclaim logo" class="mx-auto mb-6 h-24 object-fill light:hidden" />
+        <img src="/reclaim-light.svg" alt="reclaim logo" class="mx-auto mb-6 h-24 object-fill dark:hidden" />
+      </template>
+      <template v-else>
+        <img src="/reclaim-dark-ar.svg" alt="reclaim logo" class="mx-auto mb-6 h-24 object-fill light:hidden" />
+        <img src="/reclaim-light-ar.svg" alt="reclaim logo" class="mx-auto mb-6 h-24 object-fill dark:hidden" />
+      </template>
       <div class="flex flex-col items-center py-2 px-4">
         <!-- <p class="text-lg leading-relaxed text-(--bp-text-secondary) max-w-135 mx-auto mb-9 px-4 py-2">
           {{ data.description }}
