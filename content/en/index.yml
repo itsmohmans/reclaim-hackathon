@@ -280,6 +280,6 @@ footer:
       to: "https://github.com/itsmohmans/reclaim-hackathon"
     - label: Instagram
       to: "https://instagram.com/jordanopensource"
-    - label: Email
-      to: "mailto:info@josa.ngo"
+    - label: Contact
+      to: "https://josa.ngo/contact-us"
   copyright: "© 2026 JOSA. Open source, always."
