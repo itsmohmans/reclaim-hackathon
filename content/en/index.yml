@@ -277,9 +277,9 @@ footer:
       to: "/#faq"
   connectLinks:
     - label: GitHub
-      to: "/#"
+      to: "https://github.com/itsmohmans/reclaim-hackathon"
     - label: Instagram
-      to: "/#"
+      to: "https://instagram.com/jordanopensource"
     - label: Email
-      to: "/#"
+      to: "mailto:info@josa.ngo"
   copyright: "© 2026 JOSA. Open source, always."
