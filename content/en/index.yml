@@ -22,7 +22,7 @@ hero:
   tag: "A Hackathon for Open Tech by JOSA"
   title: "Reclaim"
   description: "Build practical tools that make it easier for people to own their data, migrate away from platform lock-in, and participate in a healthier open web."
-  date: "July 4th - July 19th, 2026"
+  date: "Applications Open Until June 29th"
   primaryCta:
     label: "Register Now"
     to: "https://surveys.josa.ngo/index.php/724737?newtest=Y&lang=en"
@@ -101,7 +101,7 @@ howItWorks:
       description: "Sign up solo or with a team of up to 4. All skill levels welcome."
     - num: "2"
       title: "Build"
-      description: "Once accepted, choose a track, pick a problem, and hack away. Mentors and resources will be available throughout."
+      description: "Once accepted, choose a track, pick a problem, and hack away."
     - num: "3"
       title: "Submit"
       description: "Present your project to judges and the community. The goal is to ship something real."

@@ -12,9 +12,9 @@ defineProps<{
 </script>
 
 <template>
-  <section class="py-12 bp-section-dark sm:py-16 px-6 sm:px-10 flex flex-row gap-4 justify-center max-sm:flex-col">
+  <section class="py-12 bp-section-dark sm:py-16 px-6 sm:px-10 flex flex-row gap-10 justify-center max-sm:flex-col">
     <div class="max-w-280 text-center">
-      <p class="text-sm text-(--bp-text-secondary) mb-8">{{ organizerData.title }}</p>
+      <p class="text-sm text-(--bp-text-secondary) mb-4">{{ organizerData.title }}</p>
 
       <div class="flex justify-center items-center gap-10 sm:gap-16 flex-wrap">
         <template v-for="sponsor in organizerData.items" :key="sponsor.name">
@@ -31,11 +31,11 @@ defineProps<{
               class="h-10 sm:h-12 w-auto"
             >
           </a>
-        </template v-for="sponsor in organizerData.items" :key="sponsor.name">
+        </template>
       </div>
     </div>
     <div class="max-w-280 text-center">
-      <p class="text-sm text-(--bp-text-secondary) mb-8">{{ sponsorData.title }}</p>
+      <p class="text-sm text-(--bp-text-secondary) mb-4">{{ sponsorData.title }}</p>
 
       <div class="flex justify-center items-center gap-10 sm:gap-16 flex-wrap">
         <template v-for="sponsor in sponsorData.items" :key="sponsor.name">
@@ -52,7 +52,7 @@ defineProps<{
               class="h-10 sm:h-12 w-auto"
             >
           </a>
-        </template v-for="sponsor in sponsorData.items" :key="sponsor.name">
+        </template>
       </div>
     </div>
   </section>
