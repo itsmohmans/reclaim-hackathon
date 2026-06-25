@@ -204,8 +204,8 @@ community:
     - "Join a community of builders who believe tech should be open, interoperable, owned by its users and most importantly not controlled by a handful of corporations."
 
 prizes:
-  tag: "Prizes"
-  title: "The C.r.e.a.m of the Crop"
+  tag: "The C.r.e.a.m of the Crop"
+  title: "Prizes"
   description: "The real prizes are the tools we made along the way, the way to reshape the web. But some cash is always welcome, which is why we will reward the top projects:"
   items:
     - place: "2nd"

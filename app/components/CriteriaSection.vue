@@ -12,7 +12,16 @@ defineProps<{
     }
   }
 }>()
+const expandedCards = ref<Set<string>>(new Set())
 const expandedCriteria = ref<Set<string>>(new Set())
+
+const toggleCard = (key: string) => {
+  if (expandedCards.value.has(key)) {
+    expandedCards.value.delete(key)
+  } else {
+    expandedCards.value.add(key)
+  }
+}
 
 const toggleExamples = (num: string) => {
   if (expandedCriteria.value.has(num)) {
@@ -40,58 +49,83 @@ const toggleExamples = (num: string) => {
         <div
           v-for="(item, i) in data.items"
           :key="item.title"
-          class="bp-card flex gap-4 p-6"
+          class="bp-card p-6 cursor-pointer select-none"
+          @click="toggleCard(item.title)"
         >
           <CornerMarks :size="8" />
-          <span class="text-2xl font-bold text-(--bp-accent) font-heading leading-none shrink-0">
-            {{ i + 1 }}
-          </span>
-          <div>
-            <h4 class="font-bold text-xl font-heading mb-1">
-              {{ item.title }}
-            </h4>
-            <p class="text-base leading-relaxed whitespace-pre-line text-(--bp-text-secondary)">
-              {{ item.description }}
-            </p>
-            <div v-if="item.examples?.length" class="mt-4">
-            <UButton
-              :label="item.examplesTitle || 'Examples'"
-              :trailing-icon="expandedCriteria.has(item.title) ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'"
-              variant="ghost"
-              size="sm"
-              @click="toggleExamples(item.title)"
-            />
-            <ul
-              v-show="expandedCriteria.has(item.title)"
-              class="mt-2 space-y-1.5 ps-4"
-            >
-              <li
-                v-for="example in item.examples"
-                :key="example"
-                class="text-sm leading-relaxed text-(--bp-text-secondary) list-disc"
-              >
-                {{ example }}
-              </li>
-            </ul>
-          </div>
+          <div class="flex gap-4 items-start">
+            <span class="text-2xl font-bold text-(--bp-accent) font-heading leading-none shrink-0">
+              {{ i + 1 }}
+            </span>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center justify-between gap-2">
+                <h4 class="font-bold text-xl font-heading">
+                  {{ item.title }}
+                </h4>
+                <UIcon
+                  :name="expandedCards.has(item.title) ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'"
+                  class="text-(--bp-text-secondary) shrink-0 size-5"
+                />
+              </div>
+              <div v-show="expandedCards.has(item.title)" @click.stop>
+                <p class="text-base leading-relaxed whitespace-pre-line text-(--bp-text-secondary) mt-1">
+                  {{ item.description }}
+                </p>
+                <div v-if="item.examples?.length" class="mt-4">
+                  <UButton
+                    :label="item.examplesTitle || 'Examples'"
+                    :trailing-icon="expandedCriteria.has(item.title) ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'"
+                    variant="ghost"
+                    size="sm"
+                    @click="toggleExamples(item.title)"
+                  />
+                  <ul
+                    v-show="expandedCriteria.has(item.title)"
+                    class="mt-2 space-y-1.5 ps-4"
+                  >
+                    <li
+                      v-for="example in item.examples"
+                      :key="example"
+                      class="text-sm leading-relaxed text-(--bp-text-secondary) list-disc"
+                    >
+                      {{ example }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div v-if="data.disqualification" class="mt-12">
-        <h3 class="font-bold text-2xl font-heading mb-4">
-          {{ data.disqualification.title }}
-        </h3>
-        <p class="text-base leading-relaxed whitespace-pre-line text-(--bp-text-secondary) mb-4">
-          {{ data.disqualification.description }}
-        </p>
-        <ul class="list-disc ps-6 space-y-2 text-(--bp-text-secondary)">
-          <li
-            v-for="(item, i) in data.disqualification.items"
-            :key="i"
-            class="text-base leading-relaxed"
-            v-html="item"
-          />
-        </ul>
+      <div v-if="data.disqualification" class="mt-8">
+        <div
+          class="bp-card px-5 py-4 cursor-pointer select-none"
+          @click="toggleCard('disqualification')"
+        >
+          <CornerMarks :size="6" />
+          <div class="flex items-center justify-between gap-2">
+            <h3 class="font-bold text-lg font-heading">
+              {{ data.disqualification.title }}
+            </h3>
+            <UIcon
+              :name="expandedCards.has('disqualification') ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'"
+              class="text-(--bp-text-secondary) shrink-0 size-4"
+            />
+          </div>
+          <div v-show="expandedCards.has('disqualification')" @click.stop>
+            <p class="text-sm leading-relaxed whitespace-pre-line text-(--bp-text-secondary) mt-2 mb-3">
+              {{ data.disqualification.description }}
+            </p>
+            <ul class="list-disc ps-5 space-y-1.5 text-(--bp-text-secondary)">
+              <li
+                v-for="(item, i) in data.disqualification.items"
+                :key="i"
+                class="text-sm leading-relaxed"
+                v-html="item"
+              />
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
