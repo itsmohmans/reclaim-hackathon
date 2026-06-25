@@ -34,9 +34,9 @@ useSeoMeta({
       <HeroSection :data="page.hero" />
       <AboutSection :data="page.about" />
       <TracksSection :data="page.tracks" />
+      <PrizesSection :data="page.prizes" />
       <HowItWorksSection :data="page.howItWorks" />
       <CriteriaSection :data="page.criteria" />
-      <PrizesSection :data="page.prizes" />
       <TimelineSection :data="page.timeline" />
       <ResourcesSection :data="page.resources" />
       <CommunitySection :data="page.community" />

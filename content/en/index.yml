@@ -93,8 +93,8 @@ tracks:
         - "Peer-to-Peer Data Sharing"
 
 howItWorks:
-  tag: "How It Works"
-  title: "Three Steps to Shipping"
+  tag: "Three Steps to Shipping"
+  title: "How It Works"
   steps:
     - num: "1"
       title: "Register"
